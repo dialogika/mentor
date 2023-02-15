@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kelas Private Public Speaking Dialogika</title>
+  <meta content="Cocok buat waktu Anda yang sibuk namun ingin mengembangkan diri, ikuti kelas Private Public Speaking bersama Dialogika.">
+  <meta content="Kursus Public Speaking Online" name="keywords">
+
+  <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"/>
+
+  <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"/>
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendor/icomoon-icons/style.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="assets/vendor/animate/animate.min.css"/>
+    <link rel="stylesheet" href="assets/vendor/animate/custom-animate.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendor/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendor/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendor/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendor/odometer/odometer.min.css" />
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/vendor/icomoon-icons/style.css">
+    <link rel="stylesheet" href="assets/vendor/tiny-slider/tiny-slider.min.css" />
+    <link rel="stylesheet" href="assets/vendor/reey-font/stylesheet.css" />
+    <link rel="stylesheet" href="assets/vendor/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendor/owl-carousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/vendor/twentytwenty/twentytwenty.css" />
+
+
+  <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/program.css" rel="stylesheet"/>
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/zilom.css" />
+    <link rel="stylesheet" href="assets/css/zilom-responsive.css" />
+
+  <!-- CSS Custome -->
+  <style type="text/css">
+    #hero {
+      width: 100%;
+      height: 100vh;
+      background: url("https://www.nerdwallet.com/assets/blog/wp-content/uploads/2021/05/GettyImages-1269276942-1440x864.jpg") top center no-repeat;
+      background-size: cover;
+      position: relative;
+      padding-top: 82px;
+      margin-bottom: 0px;
+    }
+
+    #hero:before {
+      content: "";
+      background: rgb(11,43,106);
+      background: linear-gradient(0deg, rgba(11,43,106,1) 0%, rgba(0,212,255,0) 100%);
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  </style>
+
+  <!-- Spreadsheet API Form Pendaftaran -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"      
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <script>
+      function SubForm (){
+        $.ajax({
+        url:"https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+        type:"post",
+        data:$("#myForm").serializeArray(),
+        headers:{
+          accessKey: "b5216464a11be561ae0b40f9ed98ee90",
+          secretKey: "038c9369d3b221f2387c9d8f3f3e488d"},
+          success: function(){ 
+            // alert("Data Telah Terkirim Silahkan Menunggu Balasan dari Whatsapp :)")
+            $('#notifications').modal('show');
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
+
+      function Subcription (){
+        $.ajax({
+          url:"https://api.apispreadsheets.com/data/18511/",
+          type:"post",
+          data:$("#subcriptions").serializeArray(),
+          success: function(){
+            window.location.href = "https://link.dialogika.co/open-whatsapp-group";
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
+    </script>
+  <!-- End Spreadsheet API Form Pendaftaran -->
+
+
+  <!-- Pixel Facebook -->
+    <!-- DEC 2021 -->
+      <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '916674555903437');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1"
+      /></noscript>
+    <!-- END DEC 2021 -->
+  <!-- End Pixel Facebook -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148836422-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148836422-2');
+    </script>
+  <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KGK9D6H');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Hotjar Tracking Code for https://dialogika.co -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2828594,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  <!-- End Hotjar -->
+
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:hello@dialogika.co">hello@dialogika.co</a>
+        <i class="bi bi-phone"></i> <a href="https://link.dialogika.co/wasap-2597-dialogika-co">+62 851-6299-2597</a>
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div><!-- End Top Bar -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+       <a href="https://dialogika.co" class="logo me-auto"><img src="assets/img/logo.png" alt="Kelas Private Public Speaking Online" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul id="navbar-navlist">
+          <li><a class="nav-link scrollto active" data-scroll href="#hero">Home</a></li>
+          <li><a class="" href="index.html">Mentor</a></a>
+          </li>
+          <li class="dropdown"><a href="#"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown">
+                <a href="#">
+                  <span>Online
+                    <sup>
+                      <span class="badge badge-pill rounded-red">LIVE</span>
+                    </sup>
+                  </span> <i class="bi bi-chevron-right"></i>
+                </a>
+                <ul>
+                  <li><a href="https://dialogika.co/program/basic-plus.html">
+                    <span>Basic Plus
+                      <sup>
+                        <span class="badge badge-pill rounded-blue">Level I</span>
+                      </sup>
+                    </span>
+                  </a></li>
+                  <li><a href="https://dialogika.co/program/presentation-class.html">
+                    <span>Presentation
+                      <sup>
+                        <span class="badge badge-pill rounded-blue">Level II</span>
+                      </sup>
+                    </span>
+                  </a></li>
+                  <li><a href="https://dialogika.co/program/royal-class.html">
+                    <span>Royal Class
+                      <sup>
+                        <span class="badge badge-pill rounded-yellow">Level III</span>
+                      </sup>
+                    </span>
+                  </a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a href="https://dialogika.co/program/private-online.html">
+                    <span>Private Online
+                    </span>
+                  </a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">
+                  <span>Offline
+                    <sup>
+                      <span class="badge badge-pill rounded-green">YOGYA</span>
+                    </sup>
+                  </span> <i class="bi bi-chevron-right"></i>
+                </a>
+                <ul>
+                  <li><a href="https://dialogika.co/program/first-class.html">
+                    <span>First Class
+                      <sup>
+                        <span class="badge badge-pill rounded-blue">Level I</span>
+                      </sup>
+                    </span>
+                  </a></li>
+                  <li><a href="https://dialogika.co/program/master-class.html">
+                    <span>Master Class
+                      <sup>
+                        <span class="badge badge-pill rounded-blue">Level II</span>
+                      </sup>
+                    </span>
+                  </a></li>
+                  <li><a href="https://dialogika.co/program/pro-class.html">
+                    <span>Pro Class
+                      <sup>
+                        <span class="badge badge-pill rounded-yellow">Level III</span>
+                      </sup>
+                    </span>
+                  </a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a href="https://dialogika.co/program/private-offline.html">Private Offline</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="align-items-center">
+                <a href="index.html">Discover</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Subscribe</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown">
+                <a href="#">
+                  <span>Online<sup><span class="badge badge-pill rounded-red">LIVE</span></sup>
+                  </span> <i class="bi bi-chevron-right"></i>
+                </a>
+                <ul>
+                  <li><a href="https://dialogika.co/subscribe/action-class.html">
+                    <span>Action Class<sup><span class="badge badge-pill rounded-blue">ADULT</span></sup>
+                    </span>
+                  </a></li>
+                  <li><a href="https://dialogika.co/subscribe/kids-start.html">
+                    <span>Kids Start<sup><span class="badge badge-pill rounded-green">5th - 9th</span></sup>
+                    </span>
+                  </a></li>
+                  <li><a href="https://dialogika.co/subscribe/kids-play.html">
+                    <span>Kids Play<sup><span class="badge badge-pill rounded-green">10th - 15th</span></sup>
+                    </span>
+                  </a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">
+                  <span>Offline<sup><span class="badge badge-pill rounded-green">CITY LIST</sup></span> 
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+                <ul>
+                  <li><a href="https://dialogika.co/subscribe/jogja-class.html"><span>Yogyakarta 
+                    <sup><span class="badge badge-pill rounded-green">Available</sup></span>
+                  </a></li>
+                  <li><a href="https://dialogika.co/subscribe/jakarta-class.html">
+                    <span>Jakarta 
+                      <sup><span class="badge badge-pill rounded-green">Available</span></sup>
+                    </span>
+                  </a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a href="https://dialogika.co/subscribe/bandung-class.html">
+                    <span>Bandung 
+                      <sup><span class="badge badge-pill rounded-yellow">Open Registration</span></sup>
+                    </span>
+                  </a></li>
+                  <li><a href="https://dialogika.co/subscribe/bali-class.html">
+                    <span>Bali 
+                      <sup><span class="badge badge-pill rounded-yellow">Open Registration</span></sup>
+                    </span>
+                  </a></li>
+                </ul>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="align-items-center">
+                <a href="https://dialogika.co/subscribe/index.html">Request</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="" href="https://dialogika.co/corporate">Corporate</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a href="https://dialogika.co/promo" class="blue-btn position-relative"> Promo <span class="d-none d-md-inline">Kelas</span>
+        <span class="position-absolute top-0 start-70 translate-middle badge rounded-pill bg-danger">
+          <i class='bx bxs-alarm-exclamation bx-tada'></i>
+          <em class="countdown" data-count="2025/12/2" data-template="&nbsp;%m:%s" style="font-family: 'Nunito',sans-serif;font-style: normal;"></em>
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>&nbsp;</h2>
+        <ol>
+          <li><a href="https://dialogika.co/index.html">Home</a></li>
+          <li><a href="#" onclick="return false;">Mentor</a></li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Breadcrumbs Section -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <span class="badge rounded-pill rounded-blue">Private </span>
+      <span class="badge rounded-pill rounded-yellow">Online</span>
+      <span class="badge rounded-pill rounded-blue">Offline</span>
+      <h1 style="font-family: 'Nunito', sans-serif;">
+        <span style="color: #F9C72E;">Meet Our Mentor</span> Kelas Private Public Speaking Dialogika
+      </h1>
+      <hr style="color: #fff;" />
+      <h2 style="color: #fff;"><strong>
+        <span style="color: #F9C72E;"> Catatan: </span> untuk beberapa kota sudah tersedia offline
+      </strong></h2>
+      <h2></h2>
+      <a href="#course-details" class="btn-get-started scrollto">Learn More</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <!--Start Course Details-->
+  <section class="course-details" id="course-details">
+    <div class="container">
+      <div class="row">
+
+        <!--Start Course Details Content-->
+        <div class="col-xl-8 col-lg-8">
+          <!--Courses One Start-->
+          <section class="courses-one courses-one--courses">
+              <div class="container">
+                  <div class="section-title">
+                    <h2 class="dumpil">Private Class</h2>
+                    <h2 class="tengah">Explore Mentor</h2>
+                  </div>
+
+                  <div class="row">
+                    <!--Start case-studies-one Top-->
+                    <div class="courses-one--courses__top">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                          <div class="courses-one--courses__menu-box">
+                              <ul class="project-filter clearfix post-filter has-dynamic-filters-counter list-unstyled">
+                                  <li data-filter=".filter-item" class="active"><span class="filter-text">All</span></li>
+                                  <li data-filter=".offline"><span class="filter-text">Offline</span></li>
+                                  <li data-filter=".online"><span class="filter-text">Online</span></li>
+                                  <li data-filter=".anak"><span class="filter-text">Anak</span></li>
+                                  
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+                    <!--End case-studies-one Top-->
+                  </div>
+
+
+                  <div class="row filter-layout masonary-layout">
+                      <!--Start Single Courses One-->
+                      <div class="col-xl-6 col-lg-9 col-md-9 filter-item  online">
+                        <div class="meet-teachers-one__single wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                          <div class="meet-teachers-one__single-img">
+                              <img src="assets/img/mentor/tiya.jpg" alt="kelas private public speaking dialogika"/>
+                          </div>
+
+                          <div class="meet-teachers-one__single-content">
+                              <div class="meet-teachers-one__single-middle-content">
+                                  <div class="title">
+                                      <h4><a href="tiya.html">Husnul Fatiya</a></h4>
+                                      <p>Private Online</p>
+                                  </div>
+                                  <p class="meet-teachers-one__single-content-text">Salah satu mentor terbaik Dialogika dan hingga kini masih aktif Mengajar</p>
+                              </div>
+
+                              <div class="meet-teachers-one__single-bottom-content">
+                                  <div class="meet-teachers-one__single-content-courses-box">
+                                      <div class="text">
+                                          <p>17++ Classes</p>
+                                      </div>
+                                      <div class="social-icon">
+                                        <a href="tiya.html" target="__blank" class="ayok">View Class</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--End Single Courses One-->
+
+                      <!--Start Single Courses One-->
+                      <div class="col-xl-6 col-lg-9 col-md-9 filter-item offline">
+                        <div class="meet-teachers-one__single wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                          <div class="meet-teachers-one__single-img">
+                              <img src="assets/img/mentor/fanny.jpg" alt="kelas private public speaking dialogika"/>
+                          </div>
+
+                          <div class="meet-teachers-one__single-content">
+                              <div class="meet-teachers-one__single-middle-content">
+                                  <div class="title">
+                                      <h4><a href="fanny.html">Fanny Carolina</a></h4>
+                                      <p>Private Offline</p>
+                                  </div>
+                                  <p class="meet-teachers-one__single-content-text">Mentor offline terbaik Dialogika, professional MC selama 17 tahun</p>
+                              </div>
+
+                              <div class="meet-teachers-one__single-bottom-content">
+                                  <div class="meet-teachers-one__single-content-courses-box">
+                                      <div class="text">
+                                          <p>24++ Classes</p>
+                                      </div>
+                                      <div class="social-icon">
+                                          <a href="fanny.html" target="__blank" class="ayok">View Class</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--End Single Courses One-->
+
+                      <!--Start Single Courses One-->
+                      <div class="col-xl-6 col-lg-9 col-md-9 filter-item online">
+                        <div class="meet-teachers-one__single wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                          <div class="meet-teachers-one__single-img">
+                              <img src="assets/img/mentor/fajar.jpg" alt="kelas private public speaking dialogika"/>
+                          </div>
+
+                          <div class="meet-teachers-one__single-content">
+                              <div class="meet-teachers-one__single-middle-content">
+                                  <div class="title">
+                                      <h4><a href="fajar.html">Muhammad Fajar</a></h4>
+                                      <p>Private Online</p>
+                                  </div>
+                                  <p class="meet-teachers-one__single-content-text">Mentor baru Dialogika dan menjadi favorit banyak member, cus join kelasnya</p>
+                              </div>
+
+                              <div class="meet-teachers-one__single-bottom-content">
+                                  <div class="meet-teachers-one__single-content-courses-box">
+                                      <div class="text">
+                                          <p>3++ Classes</p>
+                                      </div>
+                                      <div class="social-icon">
+                                        <a href="fajar.html" target="__blank" class="ayok">View Class</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--End Single Courses One-->
+
+                      <!--Start Single Courses One-->
+                      <div class="col-xl-6 col-lg-9 col-md-9 filter-item online ">
+                        <div class="meet-teachers-one__single wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                          <div class="meet-teachers-one__single-img">
+                              <img src="assets/img/mentor/bilal.jpg" alt="kelas private public speaking dialogika"/>
+                          </div>
+
+                          <div class="meet-teachers-one__single-content">
+                              <div class="meet-teachers-one__single-middle-content">
+                                  <div class="title">
+                                      <h4><a href="bilal.html">Teuku Bilal</a></h4>
+                                      <p>Private Online</p>
+                                  </div>
+                                  <p class="meet-teachers-one__single-content-text">Salah satu senior mentor di Dialogika, dan juga telah certified BNSP</p>
+                              </div>
+
+                              <div class="meet-teachers-one__single-bottom-content">
+                                  <div class="meet-teachers-one__single-content-courses-box">
+                                      <div class="text">
+                                          <p>21++ Classes</p>
+                                      </div>
+                                      <div class="social-icon">
+                                          <a href="bilal.html" target="__blank" class="ayok">View Class</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--End Single Courses One-->
+
+                      <!--Start Single Courses One-->
+                      <div class="col-xl-6 col-lg-9 col-md-9 filter-item  online">
+                        <div class="meet-teachers-one__single wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                          <div class="meet-teachers-one__single-img">
+                              <img src="assets/img/mentor/audi.jpg" alt="kelas private public speaking dialogika"/>
+                          </div>
+
+                          <div class="meet-teachers-one__single-content">
+                              <div class="meet-teachers-one__single-middle-content">
+                                  <div class="title">
+                                      <h4><a href="audie.html">Audie Ihza</a></h4>
+                                      <p>Private Online</p>
+                                  </div>
+                                  <p class="meet-teachers-one__single-content-text">Satu-satu Mentor memiliki background medis, kak Audie juga seorang MC Professional</p>
+                              </div>
+
+                              <div class="meet-teachers-one__single-bottom-content">
+                                  <div class="meet-teachers-one__single-content-courses-box">
+                                      <div class="text">
+                                          <p>6++ Classes</p>
+                                      </div>
+                                      <div class="social-icon">
+                                          <a href="aduie.html" target="__blank" class="ayok">View Class</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--End Single Courses One-->
+
+                      <!--Start Single Courses One-->
+                      <div class="col-xl-6 col-lg-9 col-md-9 filter-item offline">
+                        <div class="meet-teachers-one__single wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                          <div class="meet-teachers-one__single-img">
+                              <img src="assets/img/mentor/atik.jpg" alt="kelas private public speaking dialogika"/>
+                          </div>
+
+                          <div class="meet-teachers-one__single-content">
+                              <div class="meet-teachers-one__single-middle-content">
+                                  <div class="title">
+                                      <h4><a href="atik.html">Atik Fauzia</a></h4>
+                                      <p>Private Offline</p>
+                                  </div>
+                                  <p class="meet-teachers-one__single-content-text">Mentor favorite dan Ex Presenter, buat kamu yang di Jakarta bisa ikutan kelasnya beliau</p>
+                              </div>
+
+                              <div class="meet-teachers-one__single-bottom-content">
+                                  <div class="meet-teachers-one__single-content-courses-box">
+                                      <div class="text">
+                                          <p>4++ Classes</p>
+                                      </div>
+                                      <div class="social-icon">
+                                          <a href="atik.html" target="__blank" class="ayok">View Class</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--End Single Courses One-->
+
+                      <!--Start Single Courses One-->
+                      <div class="col-xl-6 col-lg-9 col-md-9 filter-item anak">
+                        <div class="meet-teachers-one__single wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                          <div class="meet-teachers-one__single-img">
+                              <img src="assets/img/mentor/rosa.jpg" alt="kelas private public speaking dialogika"/>
+                          </div>
+
+                          <div class="meet-teachers-one__single-content">
+                              <div class="meet-teachers-one__single-middle-content">
+                                  <div class="title">
+                                      <h4><a href="rosa.html">Rosa Amalia</a></h4>
+                                      <p>Kelas Anak</p>
+                                  </div>
+                                  <p class="meet-teachers-one__single-content-text">Mentor Anak pertama di Dialogika, friendly abis dan murah senyum, putra/putri moms pasti suka</p>
+                              </div>
+
+                              <div class="meet-teachers-one__single-bottom-content">
+                                  <div class="meet-teachers-one__single-content-courses-box">
+                                      <div class="text">
+                                          <p>4++ Classes</p>
+                                      </div>
+                                      <div class="social-icon">
+                                          <a href="rosa.html" target="__blank" class="ayok">View Class</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--End Single Courses One-->
+
+                      <!--Start Single Courses One-->
+                      <div class="col-xl-6 col-lg-9 col-md-9 filter-item online">
+                        <div class="meet-teachers-one__single wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                          <div class="meet-teachers-one__single-img">
+                              <img src="assets/img/mentor/adit.jpg" alt="kelas private public speaking dialogika"/>
+                          </div>
+
+                          <div class="meet-teachers-one__single-content">
+                              <div class="meet-teachers-one__single-middle-content">
+                                  <div class="title">
+                                      <h4><a href="adit.html">Aditya Dyah</a></h4>
+                                      <p>Private Online</p>
+                                  </div>
+                                  <p class="meet-teachers-one__single-content-text">Seru banget kelasnya, hampir semua member suka dengan metode pengajaran kak Adit, kamu juga</p>
+                              </div>
+
+                              <div class="meet-teachers-one__single-bottom-content">
+                                  <div class="meet-teachers-one__single-content-courses-box">
+                                      <div class="text">
+                                          <p>13++ Classes</p>
+                                      </div>
+                                      <div class="social-icon">
+                                          <a href="adit.html" target="__blank" class="ayok">View Class</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--End Single Courses One-->
+
+                      <!--Start Single Courses One-->
+                      <div class="col-xl-6 col-lg-9 col-md-9 filter-item anak">
+                        <div class="meet-teachers-one__single wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                          <div class="meet-teachers-one__single-img">
+                              <img src="assets/img/mentor/selvi.jpg" alt="kelas private public speaking dialogika"/>
+                          </div>
+
+                          <div class="meet-teachers-one__single-content">
+                              <div class="meet-teachers-one__single-middle-content">
+                                  <div class="title">
+                                      <h4><a href="selvi.html">Selvie Susanti</a></h4>
+                                      <p>Private Anak</p>
+                                  </div>
+                                  <p class="meet-teachers-one__single-content-text">Pembawaannya yang asik dan metode mengajarnya yang unik, kak Selvie juga seorang Voice Over lho</p>
+                              </div>
+
+                              <div class="meet-teachers-one__single-bottom-content">
+                                  <div class="meet-teachers-one__single-content-courses-box">
+                                      <div class="text">
+                                          <p>5++ Classes</p>
+                                      </div>
+                                      <div class="social-icon">
+                                          <a href="selvi.html" target="__blank" class="ayok">View Class</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--End Single Courses One-->
+
+                      <!--Start Single Courses One-->
+                      <div class="col-xl-6 col-lg-9 col-md-9 filter-item anak">
+                        <div class="meet-teachers-one__single wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                          <div class="meet-teachers-one__single-img">
+                              <img src="assets/img/mentor/cia.jpg" alt="kelas private public speaking dialogika" />
+                          </div>
+
+                          <div class="meet-teachers-one__single-content">
+                              <div class="meet-teachers-one__single-middle-content">
+                                  <div class="title">
+                                      <h4><a href="cia.html">Pauline Tricia</a></h4>
+                                      <p>Private Anak</p>
+                                  </div>
+                                  <p class="meet-teachers-one__single-content-text">Mentor baru Dialogika, suaranya yang imut, dan pembawaannya yang lucu bikin putra/putri moms enjoy</p>
+                              </div>
+
+                              <div class="meet-teachers-one__single-bottom-content">
+                                  <div class="meet-teachers-one__single-content-courses-box">
+                                      <div class="text">
+                                          <p>2++ Classes</p>
+                                      </div>
+                                      <div class="social-icon">
+                                          <a href="cia.html" target="__blank" class="ayok">View Class</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--End Single Courses One-->
+                  </div>
+              </div>
+          </section>
+          <!--Courses One End-->
+
+        </div>
+        <!--End Course Details Content-->
+
+        <!--Start Course Details Sidebar-->
+        <div class="col-xl-4 col-lg-4">
+          <div class="course-details__sidebar">
+              <div class="course-details__price wow fadeInUp animated" data-wow-delay="0.1s">
+                  <h2 class="course-details__price-amount">Rp. 987.000<span><del>Rp. 2.500.000</del></span></h2>
+                  <div class="course-details__price-btn">
+                      <a href="tiya.html" class="blue-btn">Beli Course Ini</a>
+                  </div>
+                  <h2 class="course-details__price-amount"><span>For One Month </span></h2>
+              </div>
+
+              <div class="course-details__sidebar-meta wow fadeInUp animated" data-wow-delay="0.3s">
+                  <ul class="course-details__sidebar-meta-list list-unstyled">
+                      <li class="course-details__sidebar-meta-list-item">
+                          <div class="icon">
+                              <a href=""><i class='bx bx-time-five' ></i></a>
+                          </div>
+                          <div class="text">
+                              <p><a href="#">Duration:<span> 90 minutes</span></a></p>
+                          </div>
+                      </li>
+
+                      <li class="course-details__sidebar-meta-list-item">
+                          <div class="icon">
+                              <a href=""><i class='bx bx-folder-open' ></i></a>
+                          </div>
+                          <div class="text">
+                              <p><a href="#">Lecture:<span> 7</span></a></p>
+                          </div>
+                      </li>
+
+                      <li class="course-details__sidebar-meta-list-item">
+                          <div class="icon">
+                              <a href=""><i class='bx bx-user-circle'></i></a>
+                          </div>
+                          <div class="text">
+                              <p><a href="#">Member:<span> Max 1</span></a></p>
+                          </div>
+                      </li>
+
+                      <li class="course-details__sidebar-meta-list-item">
+                          <div class="icon">
+                              <a href=""><i class='bx bxs-check-shield' ></i></a>
+                          </div>
+                          <div class="text">
+                              <p><a href="#">Guarantee: <span>Yes</span></a></p>
+                          </div>
+                      </li>
+
+                      <li class="course-details__sidebar-meta-list-item">
+                          <div class="icon">
+                              <a href=""><i class='bx bxs-badge-check' ></i></a>
+                          </div>
+                          <div class="text">
+                              <p><a href="#">eCertificate: <span>Yes</span></a></p>
+                          </div>
+                      </li>
+
+                      <li class="course-details__sidebar-meta-list-item">
+                          <div class="icon">
+                              <a href=""><i class='bx bx-log-in' ></i></a>
+                          </div>
+                          <div class="text">
+                              <p><a href="#">Skill Level: <span>Beginner</span></a></p>
+                          </div>
+                      </li>
+
+                      <li class="course-details__sidebar-meta-list-item">
+                          <div class="icon">
+                              <a href=""><i class='bx bx-transfer-alt' ></i></a>
+                          </div>
+                          <div class="text">
+                              <p><a href="#">Time:<span> Flexible</span></a></p>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="course-details__new-courses wow fadeInUp animated" data-wow-delay="0.5s">
+                  <h3 class="course-details__new-courses-title">Popular Courses</h3>
+                  <ul class="course-details__new-courses-list list-unstyled">
+                      <li class="course-details__new-courses-list-item">
+                          <div class="course-details__new-courses-list-item-img">
+                              <img src="https://dialogika.co/assets/img/program/basic-p/small.jpg" alt="Kelas Private Public Speaking Online"/>
+                          </div>
+                          <div class="course-details__new-courses-list-item-content">
+                              <h4 class="course-details__new-courses-list-item-content-title">
+                                <a href="https://dialogika.co/program/basic-plus.html" target="__blank">Kursus Public Speaking Online</a>
+                              </h4>
+                              <div class="course-details__new-courses-rateing-box">
+                                  <ul class="list-unstyled">
+                                      <li><i class="fas fa-star"></i></li>
+                                      <li><i class="fas fa-star"></i></li>
+                                      <li><i class="fas fa-star"></i></li>
+                                      <li><i class="fas fa-star"></i></li>
+                                      <li><i class="fas fa-star"></i></li>
+                                  </ul>
+                                  <div class="course-details__new-courses-rateing-count">
+                                      <span>(41)</span>
+                                  </div>
+                              </div>
+                              <p class="course-details__new-courses-price">
+                                <span class="badge rounded-pill rounded-green">Rp. 499.000</span>&nbsp;
+                                <del style="color:#aaaaaa;font-size: 9px;">Rp. 1.000.000</del>
+                              </p>
+                          </div>
+                      </li>
+
+                      <li class="course-details__new-courses-list-item">
+                          <div class="course-details__new-courses-list-item-img">
+                              <img src="https://dialogika.co/assets/img/program/first-c/small.jpg" alt="Kelas Private Public Speaking Online"/>
+                          </div>
+                          <div class="course-details__new-courses-list-item-content">
+                              <h4 class="course-details__new-courses-list-item-content-title">
+                                <a href="https://dialogika.co/program/first-class.html" target="__blank">
+                                  Kursus Public Speaking Offline</a>
+                              </h4>
+                              <div class="course-details__new-courses-rateing-box">
+                                  <ul class="list-unstyled">
+                                      <li><i class="fas fa-star"></i></li>
+                                      <li><i class="fas fa-star"></i></li>
+                                      <li><i class="fas fa-star"></i></li>
+                                      <li><i class="fas fa-star"></i></li>
+                                      <li><i class="fas fa-star"></i></li>
+                                  </ul>
+                                  <div class="course-details__new-courses-rateing-count">
+                                      <span>(23)</span>
+                                  </div>
+                              </div>
+                              <p class="course-details__new-courses-price">
+                                <span class="badge rounded-pill rounded-green">Rp. 1.579.000</span>&nbsp;
+                                <del style="color:#aaaaaa;font-size: 9px;">Rp. 2.700.000</del>
+                              </p>
+                          </div>
+                      </li>
+
+                      <li class="course-details__new-courses-list-item">
+                          <div class="course-details__new-courses-list-item-img">
+                              <img src="https://dialogika.co/assets/img/program/kids-c/banner.jpg" alt="Kelas Private Public Speaking Online"/>
+                          </div>
+                          <div class="course-details__new-courses-list-item-content">
+                              <h4 class="course-details__new-courses-list-item-content-title">
+                                <a href="https://dialogika.co/subscribe/kids-play.html" target="__blank">
+                                  Kelas Public Speaking Anak</a>
+                              </h4>
+                              <div class="course-details__new-courses-rateing-box">
+                                  <ul class="list-unstyled">
+                                      <li><i class="fas fa-star"></i></li>
+                                      <li><i class="fas fa-star"></i></li>
+                                      <li><i class="fas fa-star"></i></li>
+                                      <li><i class="fas fa-star"></i></li>
+                                      <li><i class="fas fa-star"></i></li>
+                                  </ul>
+                                  <div class="course-details__new-courses-rateing-count">
+                                      <span>(8)</span>
+                                  </div>
+                              </div>
+                              <p class="course-details__new-courses-price">
+                                <span class="badge rounded-pill rounded-green">Rp. 197.000</span>&nbsp;
+                                <del style="color:#aaaaaa;font-size: 9px;">Rp. 500.000</del>
+                              </p>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <!--End Course Details Sidebar-->
+      </div>
+    </div>
+  </section>
+  <!--End Course Details-->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3><img src="assets/img/white-logo.png" class="footer-logo" alt="Dialogika" /></h3>
+            <p>
+              Kami membantu Anda mengatasi gugup, tidak percaya diri dan ngeblank saat public speaking, wawancara kerja dan presentasi bisnis<br><br>
+
+              <strong>Phone:</strong> +62 851-6299-2597<br>
+              <strong>Email:</strong> hello@dialogika.co<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Top 5 Best Choice</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/program/basic-plus.html">Online Class</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/program/first-class.html">Offline Class</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/program/private-online.html">Private Class</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/program/presentation-class.html">Presentation</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/subscribe/kids-play">Kids Class</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>All About Dialogika</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/about/about-us.html">About Dialogika</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/intern">Intern Dialogika</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/blog">Blog Dialogika</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/about/faq.html">FAQ Dialogika</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://instagram.com/dialogika.co">Instagram Dialogika</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Gabung Group Whatsapp Gratis</h4>
+            <p>Secara Berkala Kami Akan Bagi-Bagi Tips & Trik Gratis, Dan Info Promo Lainnya</p>
+            <form action="javascript:void" role="form" id="subcriptions" method="post">
+              <input type="tel" name="Surel" placeholder="Nomor Whatsapp"><input type="submit" value="Join Now" onclick="Subcription()">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Dialogika</span></strong> | PT. Dialogika Persona Indonesia
+        </div>
+        
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://link.dialogika.co/wasap-2597-dialogika-co" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
+        <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bx bxl-linkedin"></i></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- <div id="preloader"></div> -->
+
+  <!-- ======= Modal Subcription ======= -->
+    <div class="modal fade" id="subcription-modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Terima kasih sudah melakukan subcription dengan email anda, nantikan update blog,berita,diskonan dari Dialogika</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius:25px;background: #cccccc;">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End Modal -->
+
+
+  <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <script src="assets/vendor/jquery/jquery-3.5.1.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendor/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendor/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendor/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendor/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendor/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendor/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendor/odometer/odometer.min.js"></script>
+    <script src="assets/vendor/swiper/swiper.min.js"></script>
+    <script src="assets/vendor/tiny-slider/tiny-slider.min.js"></script>
+    <script src="assets/vendor/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendor/wow/wow.js"></script>
+    <script src="assets/vendor/isotope/isotope.js"></script>
+    <script src="assets/vendor/countdown/countdown.min.js"></script>
+    <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/twentytwenty/twentytwenty.js"></script>
+    <script src="assets/vendor/twentytwenty/jquery.event.move.js"></script>
+
+  <!-- Template Main JS File -->
+    <script src="assets/js/zilom.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/whatsapp.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('#submits').attr('disabled', true);
+        $('#myForm').change(function () {
+            if ($('#names').val() != '' && $('#works').val() != '' && $('#locations').val() != '' && $('#whatsapps').val() != '') {
+                $('#submits').attr('disabled', false);
+            } else {
+                $('#submits').attr('disabled', true);
+            }
+        });
+      });
+      // get date
+      var today = new Date();
+      var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+      var time = today.getHours() + ":" + today.getMinutes();
+      var dateTime = date+'    '+time;
+      document.getElementById("timestamp").innerHTML = dateTime;
+    </script>
+
+    
+
+</body>
+
+</html>
