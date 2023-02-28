@@ -3419,8 +3419,22 @@
 
 .comment-form__input-box input[type="text"],
 .comment-form__input-box input[type="email"],
-.comment-form__input-box select,
 .comment-form__input-box input[type="tel"] {
+    height: 60px;
+    width: 100%;
+    border: none;
+    background: #DCF2FE;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    color: var(--thm-gray);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.comment-form__input-box select{
     height: 60px;
     width: 100%;
     border: none;
