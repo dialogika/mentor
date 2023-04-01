@@ -4292,7 +4292,7 @@ div.choose-sub-color {
 }
 
 /*----------------------------------------*/
-/*  11. INSTRUCTOR CSS START
+/*  INSTRUCTOR CSS START
 /*----------------------------------------*/
 .tp-instructor {
   border: 1px solid rgba(119, 124, 144, 0.1);
@@ -4321,7 +4321,7 @@ div.choose-sub-color {
 .tp-instructor__content span {
   font-size: 16px;
   text-transform: uppercase;
-  font-family: "Gordita-500";
+  font-format: woff2;
   color: var(--tp-border-2);
 }
 .tp-instructor__title {
@@ -4331,7 +4331,7 @@ div.choose-sub-color {
   display: inline-block;
 }
 .tp-instructor__title a:hover {
-  color: var(--tp-heading-secondary);
+  color: #252525;
 }
 .tp-instructor__social {
   position: absolute;
@@ -4375,6 +4375,9 @@ div.choose-sub-color {
 .tp-instructor__social ul li + li {
   margin-top: 10px;
 }
+.tp-instructor__social ul li{
+  list-style:none
+}
 .tp-instructor:hover .tp-instructor__social {
   opacity: 1;
   transform: translateY(-10px);
@@ -4388,7 +4391,7 @@ div.choose-sub-color {
   height: 2px;
   width: 100px;
   background: var(--tp-heading-secondary);
-  bottom: -17px;
+  bottom: 90px;
   left: 0;
   right: 0;
   margin: auto;
@@ -4460,7 +4463,7 @@ div.choose-sub-color {
   border-radius: 5px;
 }
 
-.isntruc-side-thumb img {
+.instruc-side-thumb img {
   width: 100%;
   border-radius: 5px;
 }
