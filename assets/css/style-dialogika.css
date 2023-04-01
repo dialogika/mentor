@@ -1003,7 +1003,7 @@ span.rounded-yellow {
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .section-bg {

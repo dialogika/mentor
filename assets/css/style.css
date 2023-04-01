@@ -40,15 +40,15 @@
   */
   --tp-common-white: #ffffff;
   --tp-common-black: #000;
-  --tp-heading-primary: #050D36;
-  --tp-heading-secondary: #FF6652;
-  --tp-heading-b-light: #050D36;
+  --tp-heading-primary: #0b2b6a;
+  --tp-heading-secondary: #0b2b6a;
+  --tp-heading-b-light: #0b2b6a;
   --tp-grey-1: #F8FAFA;
   --tp-grey-2: #F5F6F8;
   --tp-text-body: #000;
   --tp-text-1: #000;
   --tp-text-2: #777C90;
-  --tp-theme-1: #FF6652;
+  --tp-theme-1: #f1c232;
   --tp-theme-2: #F7F8F9;
   --tp-border-1: #fff;
   --tp-border-2: #245D51;
@@ -4390,8 +4390,9 @@ div.choose-sub-color {
   position: absolute;
   height: 2px;
   width: 100px;
-  background: var(--tp-heading-secondary);
-  bottom: 90px;
+  /* background: var(--tp-heading-secondary); */
+  background: #050D36;
+  bottom: -16px;
   left: 0;
   right: 0;
   margin: auto;
