@@ -4505,7 +4505,9 @@ div.choose-sub-color {
 
 .instruc-sidebar {
   padding: 15px 15px 50px 15px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+box-shadow: 1px 5px 11px 1px rgba(114,4,207,0.64);
+-webkit-box-shadow: 1px 5px 11px 1px rgba(114,4,207,0.64);
+-moz-box-shadow: 1px 5px 11px 1px rgba(114,4,207,0.64);
   border-radius: 5px;
 }
 
