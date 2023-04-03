@@ -4296,6 +4296,9 @@ div.choose-sub-color {
 /*----------------------------------------*/
 .tp-instructor {
   border: 1px solid rgba(119, 124, 144, 0.1);
+    box-shadow: 0px 6px 5px -1px rgba(32,191,240,1);
+-webkit-box-shadow: 0px 6px 5px -1px rgba(32,191,240,1);
+-moz-box-shadow: 0px 6px 5px -1px rgba(32,191,240,1);
   padding: 20px 20px 22px;
   background: var(--tp-common-white);
   border-radius: 10px;
