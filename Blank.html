@@ -23,21 +23,11 @@
         <span class="container grey-text text-lighten-1 ">
 
             <p class="flow-text">Welcome to</p>
-            <h1 class="title grey-text text-lighten-3">Dialogika</h1>
+            <h1 class="title grey-text text-lighten-3"><img src="assets/img/logo.png" alt="" width="300px"></h1>
 
             <blockquote class="flow-text">Maaf, Halaman Belum Tersedia.</blockquote>
-
-            <div class="center-align">
-                <!-- Dropdown Trigger -->
-                <a class="btn dropdown-button" href="https://dialogika.co" data-activates="exams">Home<i
-                        class="material-icons right">expand_more</i></a>
-
-                <!-- Dropdown Structure -->
-                <ul id="exams" class="dropdown-content">
-                    <li><a href="#!">Program</a></li>
-                    <li><a href="#!">Blog</a></li>
-                    <li><a href="#!">Mentor</a></li>
-                </ul>
+            <div class="row">
+                <div id="countdown"></div>
             </div>
 
         </span>
@@ -54,13 +44,22 @@
         </div>
     </div>
 
-    <footer class="page-footer deep-purple darken-3">
-        <div class="footer-copyright deep-purple darken-4">
-            <div class="container">
-                <time datetime="{{ site.time | date: '%Y' }}">&copy; 2016 Dialogika</time>
-            </div>
-        </div>
-    </footer>
+
+    <script>
+        var countDown = 10;
+        var countdownElement = document.getElementById("countdown");
+
+        var timer = setInterval(function () {
+            countdownElement.innerHTML = "Anda akan segera dialihkan dalam :  " + countDown + " s";
+            countDown--;
+
+            if (countDown < 0) {
+                clearInterval(timer);
+                countdownElement.innerHTML = "Waktu Habis!";
+                window.location.href = "https://www.dialogika.co";
+            }
+        }, 1000);
+    </script>
 </body>
 
 </html>
