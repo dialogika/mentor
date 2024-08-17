@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //mulai filter
     const filteredMentor = mentorArray.filter((item) => {
-      const getName = item.querySelector(h4);
+      const getName = item.querySelector("h4");
       return getName.innerText.toLowerCase().includes(searchTerm);
     });
 
@@ -22,21 +22,29 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   searchInput.addEventListener("input", updateList);
+
+  const showMoreButton = document.getElementById("view-more");
+  const visibleMentor = 8;
+  let currentShowMentor = visibleMentor;
+
+  mentorArray.slice(visibleMentor).forEach((mentor) => {
+    mentor.classList.replace("d-flex", "d-none");
+  });
+
+  showMoreButton.addEventListener("click", () => {
+    const remainingMentor = mentorArray.length - currentShowMentor;
+    const mentorToShow = Math.min(remainingMentor, visibleMentor);
+
+    mentorArray
+      .slice(currentShowMentor, currentShowMentor + mentorToShow)
+      .forEach((mentor) => {
+        mentor.classList.replace("d-none", "d-flex");
+      });
+
+    currentShowMentor += mentorToShow;
+
+    if (currentShowMentor >= mentorArray.length) {
+      showMoreButton.style.display = "none";
+    }
+  });
 });
-
-// JAVASCRIPT NYOBA SENDIRI TAPI BELUM JALAN
-
-// const searchInput = document.getElementById("search");
-// const mentorContainer = document.querySelector(".container .team-member");
-
-// searchInput.addEventListener("input", (i) => filterData(i.target.value));
-
-// function filterData(search) {
-//   item.forEach((item) => {
-//     if (item.innerText.toLowerCase().includes(search.toLowerCase())) {
-//       item.classList.remove("d-none");
-//     } else {
-//       item.classList.add("d-none");
-//     }
-//   });
-// }
