@@ -158,7 +158,7 @@
 /* breadcrumbs-mentor  */
 
 .image-banner {
-  background-image: url(/assets/img/mentor_edit.webp);
+  background-image: url("../../../assets/img/mentor_edit.webp");
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
