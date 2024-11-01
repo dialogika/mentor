@@ -7,6 +7,8 @@
   text-align: center;
   border-radius: 5px;
   transition: 0.3s;
+  min-width: 280px;
+  min-height: 400px;
   /* width: 98%; */
   /* margin-left: 10%; */
 }
@@ -21,6 +23,7 @@
 .team .team-member .member-img {
   position: relative;
   overflow: hidden;
+  min-height: 280px;
 }
 
 .team .team-member .member-img:after {
