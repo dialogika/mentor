@@ -37,6 +37,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.css" rel="stylesheet">
+  <link href="assets/vendor/international-phone-number/intlTelInput.css" rel="stylesheet">
 
 
   <!-- Part CSS Files -->
@@ -45,6 +46,7 @@
   <link href="assets/part/breadcrumbs-banner/banner.css" rel="stylesheet">
   <link href="assets/part/course-mentor/course.css" rel="stylesheet">
   <link href="assets/part/contact-append/contact.css" rel="stylesheet">
+  <link href="assets/part/modals/modal.css" rel="stylesheet">
 
 
   <!-- Template Main CSS File -->
@@ -264,12 +266,12 @@
 
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Master Skill</h5>
-              <p>Host</p>
+              <p>Voice Over & Presentation</p>
             </div>
 
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Skill Experience</h5>
-              <p>2+ Tahun</p>
+              <p>4+ Tahun</p>
             </div>
 
             <div class="course-info d-flex justify-content-between align-items-center">
@@ -279,7 +281,7 @@
 
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Mentoring</h5>
-              <p>Offline</p>
+              <p>Online & Offline</p>
             </div>
 
             <div class="course-info d-flex justify-content-between align-items-center">
@@ -356,6 +358,40 @@
                       </div>
 
                       <h3><a href="../program/basic-private.html">Basic Private</a></h3>
+                      <hr />
+                      <p>Mirip dengan kelas basic plus, namun kelas ini berjalan secara private dan waktunya jauh lebih
+                        flexible. Kelas ini mempelajari dan latihan materi public speaking dari dasar.</p>
+                      <p><b>Details:</b> Terdapat 7x pertemuan, total maksimal peserta 1 orang dalam satu kelas, waktu
+                        flexible, bisa mencicil biaya dan apabila tidak bisa hadir maka jadwal kelas akan di reschedule.
+                      </p>
+                      <div class="trainer d-flex justify-content-between align-items-center">
+                        <div class="trainer-profile d-flex align-items-center">
+
+                        </div>
+                        <div class="trainer-rank d-flex align-items-center">
+                          <a href="basic-private.html">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- End Course Item-->
+
+                <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4">
+                  <div class="course-item">
+                    <img src="../assets/img/program/basic-private/bg.webp" class="img-fluid" alt="...">
+                    <div class="course-content">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4>Online</h4>
+                        <span>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                        </span>
+                      </div>
+
+                      <h3><a href="../program/basic-private.html">Presentation</a></h3>
                       <hr />
                       <p>Mirip dengan kelas basic plus, namun kelas ini berjalan secara private dan waktunya jauh lebih
                         flexible. Kelas ini mempelajari dan latihan materi public speaking dari dasar.</p>
@@ -814,23 +850,65 @@
     </section><!-- End Contact Section -->
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-
+    <section id="clients" class="clients" style="margin-top: 0px; margin-bottom: -10px">
       <div class="container" data-aos="fade-up">
-
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/corporate/uad.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/corporate/amikom.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/corporate/mercu.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/corporate/polita.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/corporate/uin-suka.png" class="img-fluid" alt=""></div>
-
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/uad.png" class="img-fluid" alt="Universitas Ahmad Dahlan" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/amikom.png" class="img-fluid" alt="Universitas Amikom Yogyakarta" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/mercu.png" class="img-fluid" alt="Mercu Buana University" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/polita.png" class="img-fluid" alt="politeknik Aisyiyah Pontianak" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/aveon.png" class="img-fluid" alt="Aveon Hotel" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/avo.webp" class="img-fluid" alt="AVO Innovation & Technology" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/gides.webp" class="img-fluid" alt="GIDES Go Digital Desa" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/kdi.webp" class="img-fluid" alt="Kontes Dangdung Indonesia" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/KusumaDentalCare.png" class="img-fluid" alt="Kusuma Dental Care" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/mnc.webp" class="img-fluid" alt="MNCTV" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/ruhui-rahayu.png" class="img-fluid" alt="Ruhui Rahayu" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/smk-dr-sutomo-temanggung.png" class="img-fluid"
+                alt="SMK DR Sutomo Temanggung" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/ugm.png" class="img-fluid" alt="Universitas Gadjah Mada" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/ui.png" class="img-fluid" alt="Universitas Indonesia" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/uii.png" class="img-fluid" alt="Universtas Islam Indonesia" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/uin-suka.png" class="img-fluid" alt="UIN Sunan Kalijaga" />
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
-    </section><!-- End Clients Section -->
+    </section>
+    <!-- End Clients Section -->
 
   </main><!-- End #main -->
 
@@ -838,8 +916,14 @@
   <main-footer></main-footer>
   <!-- ======= End Footer & Counter Area ======= -->
 
+  <footer-modal></footer-modal>
+
   <a href="#contact" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bx bxl-whatsapp bx-tada"></i></a>
+
+  <!-- Part JS Files -->
+  <script src="assets/part/modals/modal-component.js"></script>
+  <script src="assets/part/"></script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -847,12 +931,15 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/international-phone-number/intlTelInput.min.js"></script>
+  <script src="assets/vendor/international-phone-number/script.js"></script>
 
   <!-- CDN -->
   <script src="https://kit.fontawesome.com/2ac952ed2e.js" crossorigin="anonymous"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/headerfooter.js"></script>
+  <script src="assets/js/clickup-task.js"></script>
   <script src="assets/js/timestamp.js"></script>
   <script src="assets/js/whatsapp.js"></script>
   <script src="assets/js/main.js"></script>

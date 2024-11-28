@@ -31,8 +31,8 @@ class Header extends HTMLElement {
 
        <nav id="navbar" class="navbar order-last order-lg-0">
         <ul class="navbar-desktop-list">
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto active" href="../index.html">Home</a></li>
+          <li class="dropdown"><a href="../program"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="#"><span>Online</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -54,13 +54,14 @@ class Header extends HTMLElement {
                 </ul>
               </li>
               <li><hr/></li>
-              <li class="dropdown"><a href="#"><span>Area</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a disabled><span>Area</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="../program/index-jogja.html">Yogyakarta</a></li>
                   <li><a href="../program/index-tangsel.html">Bintaro</a></li>
-                  <li><a href="../program/index-surabaya.html" onclick="return false;">
-                    <span>Surabaya</span>
-                    <span class="badge rounded-pill text-bg-secondary">Coming Soon</span></a>
+                  <li><a href="../program/index-solo.html">Solo</a></li>
+                  <li><a href="../program/index-banjarbaru.html">Banjarbaru</a></li>
+                  <li><a href="../program/index-surabaya.html">
+                    <span>Surabaya</span></a>
                   </li>
                 </ul>
               </li>
@@ -283,7 +284,7 @@ class Footer extends HTMLElement {
                   </a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/first-class.html">Surabaya <span class="badge rounded-pill text-bg-warning">Coming Soon</span></a>
+                  <a href="https://www.dialogika.co/page/kelas-public-speaking-surabaya-new/">Surabaya</a>
                 </li>
               </ul>
             </div><br>
@@ -402,7 +403,8 @@ class Footer extends HTMLElement {
                 class='bx bx-chevron-down d-md-none'></i></h4>
             <p>Secara Berkala Kami Akan Bagi-Bagi Tips & Trik Gratis, Dan Info Promo Lainnya</p>
             <form action="javascript:void" role="form" id="subcriptions" method="post">
-              <input type="tel" name="Surel" placeholder="Nomor Whatsapp"><input type="submit" value="Connect Now" onclick="Subcription()">
+              <input type="tel" name="Surel" class="custom-input-footer" placeholder="Join Our Class Group" disabled>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#footerSubModal" class="blue-dialogika-btn footerSubBtn">Gabung</button>
             </form>
             <br><br>
             <h4 class="d-flex justify-content-between">Payment Method<i class='bx bx-chevron-down d-md-none'></i></h4>
