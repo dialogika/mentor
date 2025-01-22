@@ -2,7 +2,7 @@
 .smooth-swiper-container-top .swiper-wrapper,
 .smooth-swiper-container-middle .swiper-wrapper,
 .smooth-swiper-container-bottom .swiper-wrapper {
-  background: #F1F7FD;
+  background: #f1f7fd;
   transition: transform 0.5s linear;
   -webkit-transition: transform 0.5s linear;
   -moz-transition: transform 0.5s linear;
@@ -20,7 +20,7 @@
   width: 250px;
   height: 100%;
   z-index: 2;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #F1F7FD);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #f1f7fd);
 }
 
 .smooth-swiper-container-top::after,
@@ -33,7 +33,7 @@
   width: 250px;
   height: 100%;
   z-index: 2;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #F1F7FD);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #f1f7fd);
 }
 
 .smooth-swiper-container .swiper-wrapper .swiper-slide {
