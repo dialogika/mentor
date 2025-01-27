@@ -34,38 +34,38 @@ class Header extends HTMLElement {
           <li><a class="nav-link scrollto active" href="../index.html">Home</a></li>
           <li class="dropdown"><a href="../program"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li class="dropdown"><a href="#"><span>Online</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="../program/basic-play.html">Basic Play <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
-                  <li><a href="../program/basic-plus.html">Basic Plus</a></li>
-                  <li><a href="../program/basic-private.html">Basic Private</a></li>
-                  <li><hr/></li>
-                  <li><a href="../program/kids-play.html">Kids Play</a></li>
-                  <li><a href="../program/kids-plus.html">Kids Plus<span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
-                  <li><a href="../program/kids-private.html">Kids Private</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>Offline</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="../program/first-class.html">First Class <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
-                  <li><a href="../program/first-kids.html">First Kids</a></li>
-                  <li><hr/></li>
-                  <li><a href="../program/first-private.html">First Private</a></li>
-                </ul>
-              </li>
-              <li><hr/></li>
-              <li class="dropdown"><a disabled><span>Area</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="../program/index-jogja.html">Yogyakarta</a></li>
-                  <li><a href="../program/index-tangsel.html">Bintaro</a></li>
-                  <li><a href="../program/index-solo.html">Solo</a></li>
-                  <li><a href="../program/index-banjarbaru.html">Banjarbaru</a></li>
-                  <li><a href="../program/index-surabaya.html">
-                    <span>Surabaya</span></a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+                <li class="dropdown"><a href="#"><span>Online</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="../program/basic-play.html">Basic Play </a></li>
+                    <li><a href="../program/basic-class.html">Basic Class <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                    <!-- <li><a href="../program/basic-private.html">Basic Private</a></li> -->
+                    <li><hr/></li>
+                    <li><a href="../program/kids-play.html">Kids Play</a></li>
+                    <li><a href="../program/kids-class.html">Kids Class<span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                    <!-- <li><a href="../program/kids-private.html">Kids Private</a></li> -->
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Offline</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="../program/first-class.html">First Class <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                    <li><a href="../program/first-kids.html">First Kids</a></li>
+                    <li><hr/></li>
+                    <li><a href="../program/first-private.html">First Private</a></li>
+                  </ul>
+                </li>
+                <li><hr/></li>
+                <li class="dropdown"><a disabled><span>Area</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="../program/index-jogja.html">Yogyakarta</a></li>
+                    <li><a href="../program/index-tangsel.html">Bintaro</a></li>
+                    <li><a href="../program/index-solo.html">Solo</a></li>
+                    <li><a href="../program/index-banjarbaru.html">Banjarbaru</a></li>
+                    <li><a href="../program/index-surabaya.html">
+                      <span>Surabaya</span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
           </li>
           <li><a class="nav-link scrollto" href="../corporate/">Corporate</a></li>
            <li><a class="nav-link scrollto" href="../about">About Us</a></li>
@@ -86,13 +86,13 @@ class Header extends HTMLElement {
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Mobile Nav ======= -->
+ <!-- ======= Mobile Nav ======= -->
   <nav class="navbar-canvas fixed-top">
     <div class="container-fluid">
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <a href="../index.html">
-            <img src="assets/img/logo.webp" class="offcanvas-title" id="offcanvasNavbarLabel"/>
+            <img src="../assets/img/logo.webp" class="offcanvas-title" id="offcanvasNavbarLabel"/>
           </a>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
@@ -117,21 +117,21 @@ class Header extends HTMLElement {
                       <a href="../program/basic-plus.html">
                         <div class="card card-body">
                             <div class="justify-content-between d-flex">
-                                <span>Basic Plus</span>
+                                <span>Basic Class</span>
                                 <span class="badge bg-warning rounded-pill text-dark">Best Buy</span>
                             </div>
                         </div>
                       </a>
-                      <a href="../program/basic-private.html"><div class="card card-body">Basic Private</div></a>
+                      <!-- <a href="../program/basic-private.html"><div class="card card-body">Basic Private</div></a> -->
                       <hr/>
                       <a href="../program/kids-play.html"><div class="card card-body">Kids Play</div></a>
-                      <a href="../program/kids-plus.html"><div class="card card-body">
+                      <a href="../program/kids-class.html"><div class="card card-body">
                         <div class="justify-content-between d-flex">
-                          <span>Kids Plus </span>
-                          <span class="badge bg-info rounded-pill">New</span>
+                          <span>Kids Class </span>
+                          <span class="badge bg-info rounded-pill">Best Buy</span>
                         </div>
                       </div></a>
-                      <a href="../program/kids-plus.html"><div class="card card-body">Kids Private</div></a>
+                      <!-- <a href="../program/kids-plus.html"><div class="card card-body">Kids Private</div></a> -->
                     </div>
                 </div>
               </a>
@@ -164,22 +164,21 @@ class Header extends HTMLElement {
             </div>
           </div>
           <a href="../corporate/"><div class="card card-body">Corporate</div></a>
+          <a href="../intern/"><div class="card card-body">Internship</div></a>
           <a href="../event/"><div class="card card-body">
             <div class="justify-content-between d-flex">
               <span>Event </span>
               <!-- <span class="badge bg-info rounded-pill">New</span> -->
             </div>
           </div></a>
-          <a href="../service/" onclick="return false;"><div class="card card-body">
+          <a href="../service/"><div class="card card-body">
             <div class="justify-content-between d-flex">
               <span>Service </span>
-              <span class="badge bg-warning rounded-pill">Coming Soon</span>
             </div>
           </div></a>
-          <a href="../shop/" onclick="return false;"><div class="card card-body">
+          <a href="https://www.dialogika.co/shop/" onclick="return false;"><div class="card card-body">
             <div class="justify-content-between d-flex">
               <span>Shop </span>
-              <span class="badge bg-warning rounded-pill">Coming Soon</span>
             </div>
           </div></a>
           <a href="../blog/"><div class="card card-body">Blog</div></a>
