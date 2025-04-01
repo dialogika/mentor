@@ -2,7 +2,7 @@
 var iti;
 var subFooterIti; //varibel untuk number di subscribe/connect now footer
 document.addEventListener("DOMContentLoaded", function () {
-  const input = document.querySelector("#whatsapp-number");
+  const input = document.querySelector("#whatsapps");
   if (input) {
     iti = window.intlTelInput(input, {
       initialCountry: "id",
@@ -10,11 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  
   // varibel untuk number di subscribe/connect now footer
-  const inputSubFooterWhatsapp = document.querySelector(
-    "#inputSubFooterWhatsapp"
-  );
+  const inputSubFooterWhatsapp = document.querySelector("#inputSubFooterWhatsapp");
   if (inputSubFooterWhatsapp) {
     subFooterIti = window.intlTelInput(inputSubFooterWhatsapp, {
       initialCountry: "id",
@@ -28,8 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetId = this.getAttribute("href");
       const targetElement = document.querySelector(targetId);
       const offset = parseInt(this.getAttribute("data-scroll-offset")) || 0;
-      const elementPosition =
-        targetElement.getBoundingClientRect().top + window.pageYOffset;
+      const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
       window.scrollTo({
         top: elementPosition - offset,

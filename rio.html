@@ -786,18 +786,16 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}"
-                    placeholder="Nama Lengkap*" required>
+                  <input type="text" name="Name" class="form-control" id="names" placeholder="Nama Lengkap*" required>
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}"
-                    placeholder="Whatsapp*" required="">
+                  <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" required="">
                 </div>
 
                 <div class="col-md-6">
-                  <input type="text" class="form-control" name="Location" id="locations" pattern="[a-zA-Z\s]{3,100}"
-                    placeholder="Domisili*" required>
+                  <input type="text" class="form-control" name="Location" id="locations" placeholder="Domisili*"
+                    required>
                 </div>
 
                 <div class="col-md-6">
@@ -826,7 +824,7 @@
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
-                  <div class="error-message"></div>
+                  <!-- <div class="error-message"></div> -->
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
                   <button type="submit" id="submits" onclick="SubForm()" class="send_contact">Send Whatsapp</button>
