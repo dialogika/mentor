@@ -1,6 +1,14 @@
 // Data-data mentor yang ditampilkan di index. /mentor homepage
 const mentorData = [
   {
+    name: "I Nyoman Indra Kusuma S P",
+    image: "assets/img/mentor/nyoman-indra-kusuma.webp",
+    alt: "Gambar kak I Nyoman Indra Kusuma S P",
+    role: "Online Mentor",
+    url: "https://www.dialogika.co/mentor/nyoman-indra-kusuma.html",
+    statusAktif: true,
+  },
+  {
     name: "Josephine Alvina Prasetyo",
     image: "assets/img/mentor/josephineAlvinaPrasetyo.webp",
     alt: "Gambar kak Josephine Alvina Prasetyo",
