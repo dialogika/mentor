@@ -1,6 +1,14 @@
 // Data-data mentor yang ditampilkan di index. /mentor homepage
 const mentorData = [
   {
+    name: "Ariani Suryaningsih",
+    image: "assets/img/mentor/ariani-suryaningsih.webp",
+    alt: "Gambar kak Ariani Suryaningsih",
+    role: "Online Mentor",
+    url: "https://www.dialogika.co/mentor/ariani-suryaningsih.html",
+    statusAktif: true,
+  },
+  {
     name: "I Nyoman Indra Kusuma S P",
     image: "assets/img/mentor/nyoman-indra-kusuma.webp",
     alt: "Gambar kak I Nyoman Indra Kusuma S P",
