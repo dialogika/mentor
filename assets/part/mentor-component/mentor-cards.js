@@ -130,10 +130,10 @@ const mentorData = [
   // },
   {
     name: "Bang Jacob",
-    image: "assets/img/mentor/Bang-Yacob.webp",
+    image: "assets/img/mentor/bang-jacob.webp",
     alt: "Gambar Kak Bang Jacob",
     role: "Offline Mentor",
-    url: "https://www.dialogika.co/mentor/bang-yacob.html",
+    url: "https://www.dialogika.co/mentor/bang-jacob.html",
     statusAktif: true,
   },
   {
