@@ -4,7 +4,7 @@ const mentorData = [
     name: "Putri Amanda",
     image: "assets/img/mentor/putri-amanda.jpeg",
     alt: "Gambar kak Putri Amanda",
-    role: "Online & Offline Mentorr",
+    role: "Online & Offline Mentor",
     url: "https://www.dialogika.co/mentor/putri-amanda.html",
     statusAktif: true,
   },
@@ -75,6 +75,14 @@ const mentorData = [
   {
     name: "Salsabilla Astari Putri",
     image: "assets/img/mentor/SalsabilaAstariaNew2.webp",
+    alt: "Gambar kak Salsabilla Astari Putri",
+    role: "Online Mentor",
+    url: "https://www.dialogika.co/mentor/salsabilla.html",
+    statusAktif: true,
+  },
+  {
+    name: "Ihlasul Akmal",
+    image: "assets/img/mentor/akmal.jpg",
     alt: "Gambar kak Salsabilla Astari Putri",
     role: "Online Mentor",
     url: "https://www.dialogika.co/mentor/salsabilla.html",
