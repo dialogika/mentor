@@ -1,6 +1,14 @@
 // Data-data mentor yang ditampilkan di index. /mentor homepage
 const mentorData = [
   {
+    name: "Putri Amanda",
+    image: "assets/img/mentor/putri-amanda.jpeg",
+    alt: "Gambar kak Putri Amanda",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/putri-amanda.html",
+    statusAktif: true,
+  },
+  {
     name: "Ariani Suryaningsih",
     image: "assets/img/mentor/ariani-suryaningsih.webp",
     alt: "Gambar kak Ariani Suryaningsih",
@@ -73,13 +81,21 @@ const mentorData = [
     statusAktif: true,
   },
   {
-    name: "Novelia Qothrunnad",
-    image: "assets/img/mentor/NoveliaQothrunnadNew.webp",
-    alt: "Gambar kak Novelia Qothrunnad",
-    role: "Online & Offline Mentor",
-    url: "https://www.dialogika.co/mentor/novelia.html",
-    statusAktif: false,
+    name: "Ihlasul Akmal",
+    image: "assets/img/mentor/akmal.jpg",
+    alt: "Gambar kak Salsabilla Astari Putri",
+    role: "Online Mentor",
+    url: "https://www.dialogika.co/mentor/salsabilla.html",
+    statusAktif: true,
   },
+  // {
+  //   name: "Novelia Qothrunnad",
+  //   image: "assets/img/mentor/NoveliaQothrunnadNew.webp",
+  //   alt: "Gambar kak Novelia Qothrunnad",
+  //   role: "Online & Offline Mentor",
+  //   url: "https://www.dialogika.co/mentor/novelia.html",
+  //   statusAktif: false,
+  // },
   {
     name: "Syifa Nabilah",
     image: "assets/img/mentor/SyifaNabilah.jpg",
@@ -329,7 +345,9 @@ class MentorList extends HTMLElement {
   }
   connectedCallback() {
     // Sort data mentor secara alphabet berdasarkan nama
-    const sortedMentors = mentorData.sort((a, b) => a.name.localeCompare(b.name));
+    const sortedMentors = mentorData.sort((a, b) =>
+      a.name.localeCompare(b.name)
+    );
 
     // Buat markup untuk masing-masing mentor
     let mentorHTML = "";
