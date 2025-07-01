@@ -1,11 +1,19 @@
 // Data-data mentor yang ditampilkan di index. /mentor homepage
 const mentorData = [
+  // {
+  //   name: "Putri Amanda",
+  //   image: "assets/img/mentor/putri-amanda.jpeg",
+  //   alt: "Gambar kak Putri Amanda",
+  //   role: "Online & Offline Mentor",
+  //   url: "https://www.dialogika.co/mentor/putri-amanda.html",
+  //   statusAktif: false,
+  // },
   {
-    name: "Putri Amanda",
-    image: "assets/img/mentor/putri-amanda.jpeg",
-    alt: "Gambar kak Putri Amanda",
+    name: "Dyah Niken Rahmawati",
+    image: "assets/img/mentor/Dyah Niken Rahmawati.jpg",
+    alt: "Gambar kak Dyah Niken Rahmawati",
     role: "Online & Offline Mentor",
-    url: "https://www.dialogika.co/mentor/putri-amanda.html",
+    url: "https://www.dialogika.co/mentor/dyah-niken-rahmawati.html",
     statusAktif: true,
   },
   {
@@ -85,7 +93,7 @@ const mentorData = [
     image: "assets/img/mentor/akmal.jpg",
     alt: "Gambar kak Salsabilla Astari Putri",
     role: "Online Mentor",
-    url: "https://www.dialogika.co/mentor/salsabilla.html",
+    url: "https://www.dialogika.co/mentor/ihlasul-akmal.html",
     statusAktif: true,
   },
   // {
