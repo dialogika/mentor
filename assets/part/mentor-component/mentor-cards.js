@@ -9,6 +9,14 @@ const mentorData = [
   //   statusAktif: false,
   // },
   {
+    name: "Dyah Niken Rahmawati",
+    image: "assets/img/mentor/Dyah Niken Rahmawati.jpg",
+    alt: "Gambar kak Dyah Niken Rahmawati",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/dyah-niken-rahmawati.html",
+    statusAktif: true,
+  },
+  {
     name: "Ariani Suryaningsih",
     image: "assets/img/mentor/ariani-suryaningsih.webp",
     alt: "Gambar kak Ariani Suryaningsih",
