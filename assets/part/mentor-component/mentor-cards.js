@@ -18,7 +18,7 @@ const mentorData = [
   },
   {
     name: "M. Rendra Hidayaturahman",
-    image: "assets/img/mentor/rendra-hidayaturahman.jpg",
+    image: "assets/img/mentor/rendra-hidayaturahman.webp",
     alt: "Gambar kak M. Rendra Hidayaturahman",
     role: "Online",
     url: "https://www.dialogika.co/mentor/rendra-hidayaturahman.html",
@@ -26,7 +26,7 @@ const mentorData = [
   },
   {
     name: "Herna Prissella Purba",
-    image: "assets/img/mentor/herna-prissella-purba.jpg",
+    image: "assets/img/mentor/herna-prissella-purba.webp",
     alt: "Gambar kak Herna Prissella Purba",
     role: "Online",
     url: "https://www.dialogika.co/mentor/herna-prissella-purba.html",
@@ -34,7 +34,7 @@ const mentorData = [
   },
   {
     name: "Nicho Finsya Prananda",
-    image: "assets/img/mentor/nicho-finsya-prananda.jpg",
+    image: "assets/img/mentor/nicho-finsya-prananda.webp",
     alt: "Gambar kak Nicho Finsya Prananda",
     role: "Online",
     url: "https://www.dialogika.co/mentor/nicho-finsya-prananda.html",
@@ -42,7 +42,7 @@ const mentorData = [
   },
   {
     name: "Rafellino Ovaldo",
-    image: "assets/img/mentor/rafellino-ovaldo.jpg",
+    image: "assets/img/mentor/rafellino-ovaldo.webp",
     alt: "Gambar kak Rafellino Ovaldo",
     role: "Online",
     url: "https://www.dialogika.co/mentor/rafellino-ovaldo.html",
@@ -50,7 +50,7 @@ const mentorData = [
   },
   {
     name: "Bondan Prasetyo",
-    image: "assets/img/mentor/bondan-prasetyo.jpg",
+    image: "assets/img/mentor/bondan-prasetyo.webp",
     alt: "Gambar kak Bondan Prasetyo",
     role: "Online",
     url: "https://www.dialogika.co/mentor/bondan-prasetyo.html",
@@ -58,7 +58,7 @@ const mentorData = [
   },
   {
     name: "Dyah Niken Rahmawati",
-    image: "assets/img/mentor/Dyah Niken Rahmawati.jpg",
+    image: "assets/img/mentor/dyah-niken-rahmawati.webp",
     alt: "Gambar kak Dyah Niken Rahmawati",
     role: "Online & Offline Mentor",
     url: "https://www.dialogika.co/mentor/dyah-niken-rahmawati.html",
@@ -138,7 +138,7 @@ const mentorData = [
   },
   {
     name: "Ihlasul Akmal",
-    image: "assets/img/mentor/akmal.jpg",
+    image: "assets/img/mentor/Akmal.webp",
     alt: "Gambar kak Ihlasaul Akmal",
     role: "Online Mentor",
     url: "https://www.dialogika.co/mentor/ihlasaul-akmal.html",
@@ -401,9 +401,7 @@ class MentorList extends HTMLElement {
   }
   connectedCallback() {
     // Sort data mentor secara alphabet berdasarkan nama
-    const sortedMentors = mentorData.sort((a, b) =>
-      a.name.localeCompare(b.name)
-    );
+    const sortedMentors = mentorData.sort((a, b) => a.name.localeCompare(b.name));
 
     // Buat markup untuk masing-masing mentor
     let mentorHTML = "";
