@@ -201,7 +201,7 @@ const mentorData = [
   //   statusAktif: false,
   // },
   {
-    name: "Bang Jacob",
+    name: "Ricardo Jacob",
     image: "assets/img/mentor/bang-jacob.webp",
     alt: "Gambar Kak Bang Jacob",
     role: "Offline Mentor",
@@ -246,7 +246,7 @@ const mentorData = [
     alt: "Gambar Kak Melati Octavia",
     role: "Online Mentor",
     url: "https://www.dialogika.co/mentor/melati-octavia.html",
-    statusAktif: true,
+    statusAktif: false,
   },
   {
     name: "Sandra Nova Raharjo",
@@ -376,6 +376,14 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/ibnu-fanhar-wibowo.html",
     statusAktif: true,
   },
+  {
+    name: "Anak Agung Ari Cahya Wibawa",
+    image: "assets/img/mentor/Anak-Agung-Ari-Cahya-Wibawa.webp",
+    alt: "Gambar kak Anak Agung Ari Cahya Wibawa",
+    role: "Offline Mentor",
+    url: "https://www.dialogika.co/mentor/anak-agung.html",
+    statusAktif: true,
+  },
   // { Inactive
   //   name: "Rahmat Kurnia (Erka)",
   //   image: "https://coacherka.com/gallery_gen/b7569f7c656bef1a435483126ca04976_940x940_fit.jpg?ts=1724281851",
@@ -405,9 +413,10 @@ class MentorList extends HTMLElement {
       a.name.localeCompare(b.name)
     );
 
-    // Buat markup untuk masing-masing mentor
+    // Filter hanya mentor yang aktif
+    const activeMentors = sortedMentors.filter((m) => m.statusAktif);
     let mentorHTML = "";
-    sortedMentors.forEach((mentor) => {
+    activeMentors.forEach((mentor) => {
       mentorHTML += `
       <div class="col-lg-3 col-md-6 d-flex align-items-stretch mentor-card" data-aos="fade-up" data-aos-delay="100">
         <div class="team-member">
