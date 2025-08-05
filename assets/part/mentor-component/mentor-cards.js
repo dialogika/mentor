@@ -30,7 +30,7 @@ const mentorData = [
     alt: "Gambar kak Herna Prissella Purba",
     role: "Online",
     url: "https://www.dialogika.co/mentor/herna-prissella-purba.html",
-    statusAktif: true,
+    statusAktif: false,
   },
   {
     name: "Nicho Finsya Prananda",
@@ -86,7 +86,7 @@ const mentorData = [
     alt: "Gambar kak Josephine Alvina Prasetyo",
     role: "Online Mentor",
     url: "https://www.dialogika.co/mentor/josephine-alvina-prasetyo.html",
-    statusAktif: true,
+    statusAktif: false,
   },
   // {
   //   name: "Pawestri Kusumo Arum",
@@ -409,7 +409,9 @@ class MentorList extends HTMLElement {
   }
   connectedCallback() {
     // Sort data mentor secara alphabet berdasarkan nama
-    const sortedMentors = mentorData.sort((a, b) => a.name.localeCompare(b.name));
+    const sortedMentors = mentorData.sort((a, b) =>
+      a.name.localeCompare(b.name)
+    );
 
     // Filter hanya mentor yang aktif
     const activeMentors = sortedMentors.filter((m) => m.statusAktif);
