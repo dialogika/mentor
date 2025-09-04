@@ -9,6 +9,14 @@ const mentorData = [
   //   statusAktif: false,
   // },
   {
+    name: "Vebri Aldiansyah",
+    image: "assets/img/mentor/vebri-aldiansyah.jpg",
+    alt: "Gambar kak Vebri Aldiansyah",
+    role: "Online",
+    url: "https://www.dialogika.co/mentor/vebri-aldiansyah.html",
+    statusAktif: true,
+  },
+  {
     name: "Daniel Ari Setiawan",
     image: "assets/img/mentor/daniel-ari-setiawan.jpg",
     alt: "Gambar kak Daniel Ari Setiawan",
