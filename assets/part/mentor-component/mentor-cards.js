@@ -10,7 +10,7 @@ const mentorData = [
   // },
   {
     name: "Vebri Aldiansyah",
-    image: "assets/img/mentor/vebri-aldiansyah.jpg",
+    image: "assets/img/mentor/Vebri-aldiansyah.jpeg,
     alt: "Gambar kak Vebri Aldiansyah",
     role: "Online",
     url: "https://www.dialogika.co/mentor/vebri-aldiansyah.html",
