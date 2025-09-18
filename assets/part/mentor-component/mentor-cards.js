@@ -209,7 +209,7 @@ const mentorData = [
   //   statusAktif: false,
   // },
   {
-    name: "Ricardo Jacob",
+    name: "Bang Jacob",
     image: "assets/img/mentor/bang-jacob.webp",
     alt: "Gambar Kak Bang Jacob",
     role: "Offline Mentor",
