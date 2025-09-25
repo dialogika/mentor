@@ -9,6 +9,14 @@ const mentorData = [
   //   statusAktif: false,
   // },
   {
+    name: "Dr. Lukmanul Hafiz",
+    image: "assets/img/mentor/lukmanul-hafiz.jpeg",
+    alt: "Gambar mentor Dr. Lukmanul Hafiz",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/lukmanul-hafiz.html",
+    statusAktif: true,
+  },
+  {
     name: "Vebri Aldiansyah",
     image: "assets/img/mentor/Vebri-aldiansyah.jpeg",
     alt: "Gambar mentor Vebri Aldiansyah",
