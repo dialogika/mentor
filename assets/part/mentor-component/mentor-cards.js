@@ -9,6 +9,14 @@ const mentorData = [
   //   statusAktif: false,
   // },
   {
+    name: "Andree Octavianus Sinaga",
+    image: "assets/img/mentor/andree-octavianus-sinaga.jpeg",
+    alt: "Gambar mentor Andree Octavianus Sinaga",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/andree-octavianus-sinaga.html",
+    statusAktif: true,
+  },
+  {
     name: "Dr. Lukmanul Hafiz",
     image: "assets/img/mentor/lukmanul-hafiz.jpeg",
     alt: "Gambar mentor Dr. Lukmanul Hafiz",
