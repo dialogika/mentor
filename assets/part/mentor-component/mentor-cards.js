@@ -9,6 +9,15 @@ const mentorData = [
   //   statusAktif: false,
   // },
   {
+    name: "Regina Nashya",
+    image: "assets/img/mentor/regita_nasya.jpeg",
+    alt: "Gambar mentor Regina Nashya",
+    role: "Online",
+    url: "https://www.dialogika.co/mentor/regita-nasya.html",
+    statusAktif: true,
+  },
+
+  {
     name: "Andree Octavianus Sinaga",
     image: "assets/img/mentor/andree-octavianus-sinaga.jpeg",
     alt: "Gambar mentor Andree Octavianus Sinaga",
