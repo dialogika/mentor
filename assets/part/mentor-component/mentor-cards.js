@@ -8,6 +8,33 @@ const mentorData = [
   //   url: "https://www.dialogika.co/mentor/putri-amanda.html",
   //   statusAktif: false,
   // },
+    {
+    name: "Rhinto Setiawan",
+    image: "assets/img/mentor/rhinto-setyawan.webp",
+    alt: "Gambar mentor Rhinto Setiawan",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/rhinto-setiawan.html",
+    statusAktif: true,
+  },
+
+  {
+    name: "Waode Zalfa Yunitradias",
+    image: "assets/img/mentor/waode-zalfa.webp",
+    alt: "Gambar mentor Waode Zalfa Yunitradias",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/waode-zalfa-yunitradias.html",
+    statusAktif: true,
+  },
+
+  {
+    name: "Regina Nashya",
+    image: "assets/img/mentor/regina-nashya.webp",
+    alt: "Gambar mentor Regina Nashya",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/regina-nashya.html",
+    statusAktif: true,
+  },
+
   {
     name: "Regina Nashya",
     image: "assets/img/mentor/regita_nasya.jpeg",
