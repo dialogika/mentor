@@ -10,7 +10,7 @@ const mentorData = [
   // },
     {
     name: "Rhinto Setiawan",
-    image: "assets/img/mentor/rhinto-setyawan.webp",
+    image: "assets/img/mentor/Rhinto-setyawan.webp",
     alt: "Gambar mentor Rhinto Setiawan",
     role: "Online & Offline Mentor",
     url: "https://www.dialogika.co/mentor/rhinto-setiawan.html",
