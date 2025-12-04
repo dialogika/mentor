@@ -16,7 +16,6 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/rhinto-setiawan.html",
     statusAktif: true,
   },
-
   {
     name: "Waode Zalfa Yunitradias",
     image: "assets/img/mentor/waode-zalfa.webp",
@@ -25,7 +24,6 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/waode-zalfa-yunitradias.html",
     statusAktif: true,
   },
-
   {
     name: "Regina Nashya",
     image: "assets/img/mentor/regina-nashya.webp",
@@ -34,16 +32,6 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/regina-nashya.html",
     statusAktif: true,
   },
-
-  {
-    name: "Regina Nashya",
-    image: "assets/img/mentor/regita_nasya.jpeg",
-    alt: "Gambar mentor Regina Nashya",
-    role: "Online",
-    url: "https://www.dialogika.co/mentor/regita-nasya.html",
-    statusAktif: true,
-  },
-
   {
     name: "Andree Octavianus Sinaga",
     image: "assets/img/mentor/andree-octavianus-sinaga.jpeg",
