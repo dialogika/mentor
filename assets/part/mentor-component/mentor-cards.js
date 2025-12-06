@@ -9,6 +9,14 @@ const mentorData = [
   //   statusAktif: false,
   // },
     {
+    name: "Arga Dumadi",
+    image: "assets/img/mentor/arga-dumadi.jpg",
+    alt: "Gambar mentor Arga Dumadi",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/arga-dumadi.html",
+    statusAktif: true,
+    },
+    {
     name: "Rhinto Setiawan",
     image: "assets/img/mentor/Rhinto-setyawan.webp",
     alt: "Gambar mentor Rhinto Setiawan",
