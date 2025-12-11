@@ -9,6 +9,14 @@ const mentorData = [
   //   statusAktif: false,
   // },
     {
+    name: "Dedi Andrian",
+    image: "assets/img/mentor/dedi-andrian.jpg",
+    alt: "Gambar mentor Dedi Andrian",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/dedi-andrian.html",
+    statusAktif: true,
+    },
+    {
     name: "Arga Dumadi",
     image: "assets/img/mentor/arga-dumadi.jpg",
     alt: "Gambar mentor Arga Dumadi",
@@ -66,7 +74,7 @@ const mentorData = [
   },
   {
     name: "Daniel Ari Setiawan",
-    image: "assets/img/mentor/daniel-ari-setiawan.jpg",
+    image: "assets/img/mentor/daniel-ari.jpg",
     alt: "Gambar kak Daniel Ari Setiawan",
     role: "Online",
     url: "https://www.dialogika.co/mentor/daniel-ari-setiawan.html",
@@ -90,7 +98,7 @@ const mentorData = [
   },
   {
     name: "Nicho Finsya Prananda",
-    image: "assets/img/mentor/nicho-finsya-prananda.webp",
+    image: "assets/img/mentor/nicho-finsya.jpg",
     alt: "Gambar kak Nicho Finsya Prananda",
     role: "Online",
     url: "https://www.dialogika.co/mentor/nicho-finsya-prananda.html",
