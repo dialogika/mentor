@@ -9,6 +9,14 @@ const mentorData = [
   //   statusAktif: false,
   // },
     {
+    name: "Wening Soca",
+    image: "assets/img/mentor/wening-soca.jpg",
+    alt: "Gambar mentor Wening Soca",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/wening-soca.html",
+    statusAktif: true,
+    },
+    {
     name: "Dedi Andrian",
     image: "assets/img/mentor/dedi-andrian.jpg",
     alt: "Gambar mentor Dedi Andrian",
