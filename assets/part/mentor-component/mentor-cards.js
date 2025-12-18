@@ -145,9 +145,9 @@ const mentorData = [
     statusAktif: true,
   },
   {
-    name: "I Nyoman Indra Kusuma S P",
+    name: "Kusuma Sukma",
     image: "assets/img/mentor/nyoman-indra-kusuma.webp",
-    alt: "Gambar kak I Nyoman Indra Kusuma S P",
+    alt: "Gambar kak Kusuma Sukma",
     role: "Online Mentor",
     url: "https://www.dialogika.co/mentor/nyoman-indra-kusuma.html",
     statusAktif: true,
