@@ -260,6 +260,20 @@
                             <input type="email" class="input-field" id="candidateEmail" placeholder="email@contoh.com">
                         </div>
 
+                        <!-- Instagram -->
+                        <div>
+                            <label for="candidateInstagram">Link Instagram</label>
+                            <input type="url" class="input-field" id="candidateInstagram"
+                                placeholder="https://instagram.com/username">
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <div>
+                            <label for="candidateLinkedin">Link LinkedIn</label>
+                            <input type="url" class="input-field" id="candidateLinkedin"
+                                placeholder="https://linkedin.com/in/username">
+                        </div>
+
                         <!-- Pengalaman Mengajar -->
                         <div class="md:col-span-2">
                             <label for="candidateTeachExp">Apakah pernah memiliki pengalaman mengajar?</label>
@@ -492,6 +506,8 @@
             const shortDesc = (document.getElementById("candidateShortDescription")?.value || "").trim();
             const whatsapp = (document.getElementById("candidateWhatsapp")?.value || "").trim();
             const email = (document.getElementById("candidateEmail")?.value || "").trim();
+            const instagram = (document.getElementById("candidateInstagram")?.value || "").trim();
+            const linkedin = (document.getElementById("candidateLinkedin")?.value || "").trim();
             const teachExp = (document.getElementById("candidateTeachExp")?.value || "").trim();
 
             // Audience checkboxes → array
@@ -533,8 +549,8 @@
                     campus: null,
                     whatsapp: whatsapp || null,
                     email: email || null,
-                    instagram: null,
-                    linkedin: null
+                    instagram: instagram || null,
+                    linkedin: linkedin || null
                 },
                 education: null,
                 profiling: {
@@ -548,8 +564,8 @@
                     platform: platform || null,
                     whatsapp: whatsapp || null,
                     email: email || null,
-                    instagram: null,
-                    linkedin: null,
+                    instagram: instagram || null,
+                    linkedin: linkedin || null,
                     portfolio_url: null,
                     resume_url: null,
                     teaching_experience: teachExp || null,
