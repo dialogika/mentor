@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Rekrutmen Bertahap - Dialogika</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        .form-step {
+            display: none;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .form-step-active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .step-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            color: #94a3b8;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .step-active .step-circle {
+            border-color: #003366;
+            background: #003366;
+            color: white;
+        }
+
+        .step-completed .step-circle {
+            border-color: #003366;
+            background: #003366;
+            color: white;
+        }
+
+        .input-field {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 10px 14px;
+            width: 100%;
+            transition: 0.2s;
+            background-color: #fff;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #003366;
+            box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+        }
+
+        label {
+            font-weight: 500;
+            color: #475569;
+            font-size: 0.875rem;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        /* Checkbox group styling */
+        .checkbox-group {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            cursor: pointer;
+            transition: background 0.15s;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .checkbox-item:last-child {
+            border-bottom: none;
+        }
+
+        .checkbox-item:hover {
+            background-color: #f0f4f8;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #003366;
+            cursor: pointer;
+        }
+
+        .checkbox-item span {
+            font-size: 0.875rem;
+            color: #475569;
+            font-weight: 400;
+        }
+
+        /* Audience section conditional visibility */
+        .conditional-field {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .conditional-field.visible {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="py-10 px-4">
+
+    <div class="max-w-3xl mx-auto">
+        <!-- Logo Header -->
+        <div class="flex text-center justify-center mb-10">
+            <img src="https://www.dialogika.co/assets/img/logo.webp" alt="Dialogika Logo" class="h-14 text-center">
+        </div>
+        <p class="text-2xl font-bold text-slate-800 text-center" style="margin-top: -30px;">Formulir Pendaftaran
+            Mentor di Dialogika</p>
+
+        <!-- Progress Indicator -->
+        <div class="flex justify-between items-center mb-10 relative">
+            <!-- Progress Line -->
+            <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -z-10 transform -translate-y-1/2"></div>
+
+            <div class="step-item step-active relative" id="step-icon-1">
+                <div class="step-circle">1</div>
+                <p
+                    class="absolute -bottom-7 left-1/2 transform -translate-x-1/2 text-[10px] md:text-xs font-semibold uppercase tracking-wider text-slate-500">
+                    Info Umum</p>
+            </div>
+            <div class="step-item relative" id="step-icon-2">
+                <div class="step-circle">2</div>
+                <p
+                    class="absolute -bottom-7 left-1/2 transform -translate-x-1/2 text-[10px] md:text-xs font-semibold uppercase tracking-wider text-slate-500 text-center">
+                    Data Pribadi</p>
+            </div>
+            <div class="step-item relative" id="step-icon-3">
+                <div class="step-circle">3</div>
+                <p
+                    class="absolute -bottom-7 left-1/2 transform -translate-x-1/2 text-[10px] md:text-xs font-semibold uppercase tracking-wider text-slate-500">
+                    Dokumen</p>
+            </div>
+        </div>
+
+        <!-- Card Form -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mt-12">
+            <form id="multiStepForm">
+
+                <!-- TAHAP 1: INFORMASI UMUM -->
+                <div class="form-step form-step-active">
+                    <h2 class="text-xl font-bold text-slate-800 mb-6">Informasi Umum</h2>
+                    <div class="grid grid-cols-1 gap-6">
+                        <!-- Lokasi -->
+                        <div>
+                            <label for="candidateMode">Lokasi</label>
+                            <select class="input-field" id="candidateMode">
+                                <option value="" disabled selected>Pilih Lokasi</option>
+                                <option value="Yogyakarta">Yogyakarta</option>
+                                <option value="Jakarta Utara">Jakarta Utara</option>
+                                <option value="Jakarta Barat">Jakarta Barat</option>
+                                <option value="Jakarta Timur">Jakarta Timur</option>
+                                <option value="Jakarta Pusat">Jakarta Pusat</option>
+                                <option value="Jakarta Selatan">Jakarta Selatan</option>
+                                <option value="Tangerang">Tangerang</option>
+                                <option value="Tangerang Selatan">Tangerang Selatan</option>
+                                <option value="Bandung">Bandung</option>
+                                <option value="Semarang">Semarang</option>
+                                <option value="Solo">Solo</option>
+                                <option value="Surabaya">Surabaya</option>
+                                <option value="Pontianak">Pontianak</option>
+                            </select>
+                        </div>
+
+                        <!-- Apakah saat ini bekerja aktif? -->
+                        <div>
+                            <label for="candidatePosition">Apakah saat ini Anda bekerja aktif dengan jam kantor pada
+                                umumnya?</label>
+                            <select class="input-field" id="candidatePosition">
+                                <option value="" disabled selected>Pilih jawaban</option>
+                                <option value="Iya">Iya</option>
+                                <option value="Tidak">Tidak</option>
+                            </select>
+                        </div>
+
+                        <!-- Tau Dialogika darimana? -->
+                        <div>
+                            <label for="candidatePlatform">Tau Dialogika darimana?</label>
+                            <select class="input-field" id="candidatePlatform">
+                                <option value="" disabled selected>Pilih platform</option>
+                                <option value="Website Dialogika">Website Dialogika</option>
+                                <option value="Website MSIB">Website MSIB</option>
+                                <option value="LinkedIn">LinkedIn</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAHAP 2: DATA PRIBADI -->
+                <div class="form-step">
+                    <h2 class="text-xl font-bold text-slate-800 mb-6">Data Pribadi & Kontak</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Nama Lengkap -->
+                        <div class="md:col-span-1">
+                            <label for="candidateFullName">Nama Lengkap</label>
+                            <input type="text" class="input-field" id="candidateFullName" placeholder="Nama sesuai KTP">
+                        </div>
+
+                        <!-- Foto Profil -->
+                        <div>
+                            <label for="candidatePhoto">Foto Profil</label>
+                            <input type="file" class="input-field text-sm" id="candidatePhoto">
+                        </div>
+
+                        <!-- Deskripsi Diri -->
+                        <div class="md:col-span-2">
+                            <label for="candidateShortDescription">Deskripsi Diri</label>
+                            <textarea class="input-field h-24" id="candidateShortDescription"
+                                placeholder="Ceritakan singkat siapa Anda..."></textarea>
+                        </div>
+
+                        <!-- WhatsApp -->
+                        <div>
+                            <label for="candidateWhatsapp">Nomor WhatsApp</label>
+                            <input type="tel" class="input-field" id="candidateWhatsapp" placeholder="0812xxxx">
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label for="candidateEmail">Email Aktif</label>
+                            <input type="email" class="input-field" id="candidateEmail" placeholder="email@contoh.com">
+                        </div>
+
+                        <!-- Pengalaman Mengajar -->
+                        <div class="md:col-span-2">
+                            <label for="candidateTeachExp">Apakah pernah memiliki pengalaman mengajar?</label>
+                            <select class="input-field" id="candidateTeachExp" onchange="toggleAudienceField()">
+                                <option value="" disabled selected>Pilih jawaban</option>
+                                <option value="Iya">Iya</option>
+                                <option value="Tidak">Tidak</option>
+                            </select>
+                        </div>
+
+                        <!-- Range Umur Audiens (conditional) -->
+                        <div class="md:col-span-2 conditional-field" id="audienceField">
+                            <label>Jika pernah, audiensnya di range umur berapa?</label>
+                            <p class="text-xs text-slate-400 mb-2">Pilih satu atau lebih opsi</p>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="candidateAudience" value="Anak (5 - 10 tahun)">
+                                    <span>Anak (5 – 10 tahun)</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="candidateAudience" value="Anak (11 - 15 tahun)">
+                                    <span>Anak (11 – 15 tahun)</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="candidateAudience" value="Dewasa Awal (16 - 20 tahun)">
+                                    <span>Dewasa Awal (16 – 20 tahun)</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="candidateAudience" value="Dewasa (21 - 59 tahun)">
+                                    <span>Dewasa (21 – 59 tahun)</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="candidateAudience" value="Praktisi">
+                                    <span>Praktisi</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAHAP 3: DOKUMEN -->
+                <div class="form-step">
+                    <h2 class="text-xl font-bold text-slate-800 mb-6">Dokumen & Informasi Teknis</h2>
+                    <div class="space-y-6">
+                        <!-- Portfolio & Resume -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="candidatePortfolio">Portofolio (Link/File)</label>
+                                <input type="file" class="input-field" id="candidatePortfolio">
+                            </div>
+                            <div>
+                                <label for="candidateResume">Resume / CV</label>
+                                <input type="file" class="input-field" id="candidateResume">
+                            </div>
+                        </div>
+
+                        <!-- Nama Provider WiFi -->
+                        <div>
+                            <label for="candidateWifi">Nama Provider WiFi</label>
+                            <input type="text" class="input-field" id="candidateWifi"
+                                placeholder="Misal: Indihome, Biznet, MyRepublic...">
+                        </div>
+
+                        <!-- Merek Laptop -->
+                        <div>
+                            <label for="candidateLaptop">Merek Laptop</label>
+                            <input type="text" class="input-field" id="candidateLaptop"
+                                placeholder="Misal: MacBook Pro, Dell XPS, Lenovo ThinkPad...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tombol Navigasi -->
+                <div class="flex justify-between mt-10 pt-6 border-t border-slate-100">
+                    <button type="button" id="prevBtn" onclick="changeStep(-1)"
+                        class="px-6 py-2.5 rounded-lg font-medium text-slate-500 hover:bg-slate-100 transition invisible">
+                        Sebelumnya
+                    </button>
+                    <button type="button" id="nextBtn" onclick="changeStep(1)"
+                        class="px-8 py-2.5 bg-[#003366] text-white rounded-lg font-semibold hover:bg-[#002244] transition shadow-lg shadow-blue-900/20">
+                        Selanjutnya
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+        <p class="text-center text-slate-400 text-sm mt-8">© 2024 Dialogika Career Center</p>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import {
+            getFirestore,
+            collection,
+            addDoc,
+            serverTimestamp
+        } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import {
+            getStorage,
+            ref as storageRef,
+            uploadBytes,
+            getDownloadURL
+        } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDyzzEYbJkkl-N8snrQf14qvj8De4YliV0",
+            authDomain: "pre-dialogika.firebaseapp.com",
+            projectId: "pre-dialogika",
+            storageBucket: "pre-dialogika.firebasestorage.app",
+            messagingSenderId: "343771410480",
+            appId: "1:343771410480:web:32881c9868522090237df5",
+            measurementId: "G-SXN811P3N0"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const storage = getStorage(app);
+
+        async function uploadFileToStorage(file, folder) {
+            if (!file) return null;
+            const safeFolder = folder || "uploads";
+            const path = safeFolder + "/" + Date.now() + "-" + file.name;
+            const fileRef = storageRef(storage, path);
+            await uploadBytes(fileRef, file);
+            const url = await getDownloadURL(fileRef);
+            return url;
+        }
+
+        // Expose to global scope for submitApplication
+        window.db = db;
+        window.collection = collection;
+        window.addDoc = addDoc;
+        window.serverTimestamp = serverTimestamp;
+        window.storage = storage;
+        window.storageRef = storageRef;
+        window.uploadBytes = uploadBytes;
+        window.getDownloadURL = getDownloadURL;
+        window.uploadFileToStorage = uploadFileToStorage;
+    </script>
+
+    <script>
+        // ─── Toggle audiens field berdasarkan jawaban pengalaman mengajar ───
+        function toggleAudienceField() {
+            const teachExp = document.getElementById("candidateTeachExp").value;
+            const audienceField = document.getElementById("audienceField");
+
+            if (teachExp === "Iya") {
+                audienceField.classList.add("visible");
+            } else {
+                audienceField.classList.remove("visible");
+                // Reset checkboxes saat pilih "Tidak"
+                document.querySelectorAll('input[name="candidateAudience"]').forEach(cb => {
+                    cb.checked = false;
+                });
+            }
+        }
+
+        // ─── Multi-step navigation ─────────────────────────────────────────
+        let currentStep = 0;
+        const steps = document.querySelectorAll(".form-step");
+        const stepIcons = document.querySelectorAll(".step-item");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        function changeStep(n) {
+            if (n === 1 && currentStep === steps.length - 1) {
+                submitApplication();
+                return;
+            }
+
+            steps[currentStep].classList.remove("form-step-active");
+            stepIcons[currentStep].classList.remove("step-active");
+
+            currentStep += n;
+
+            if (currentStep < 0) currentStep = 0;
+            if (currentStep >= steps.length) currentStep = steps.length - 1;
+
+            showStep(currentStep);
+        }
+
+        function showStep(n) {
+            steps[n].classList.add("form-step-active");
+
+            for (let i = 0; i <= n; i++) {
+                stepIcons[i].classList.add("step-active");
+            }
+            for (let i = n + 1; i < stepIcons.length; i++) {
+                stepIcons[i].classList.remove("step-active");
+            }
+
+            if (n === 0) {
+                prevBtn.classList.add("invisible");
+            } else {
+                prevBtn.classList.remove("invisible");
+            }
+
+            if (n === (steps.length - 1)) {
+                nextBtn.innerHTML = "Simpan Lamaran";
+                nextBtn.classList.replace("bg-[#003366]", "bg-green-600");
+            } else {
+                nextBtn.innerHTML = "Selanjutnya";
+                nextBtn.classList.replace("bg-green-600", "bg-[#003366]");
+            }
+        }
+
+        // ─── Submit ────────────────────────────────────────────────────────
+        async function submitApplication() {
+            const db = window.db;
+            const collectionFn = window.collection;
+            const addDocFn = window.addDoc;
+            const serverTimestampFn = window.serverTimestamp;
+            const uploadFileToStorageFn = window.uploadFileToStorage;
+
+            if (!db || !collectionFn || !addDocFn || !serverTimestampFn) {
+                alert("Konfigurasi database belum siap. Silakan coba beberapa saat lagi.");
+                return;
+            }
+
+            const formEl = document.getElementById("multiStepForm");
+
+            // ── Tahap 1 ──
+            const mode = (document.getElementById("candidateMode")?.value || "").trim();
+            const workingStatus = (document.getElementById("candidatePosition")?.value || "").trim();
+            const platform = (document.getElementById("candidatePlatform")?.value || "").trim();
+
+            // ── Tahap 2 ──
+            const fullName = (document.getElementById("candidateFullName")?.value || "").trim();
+            const shortDesc = (document.getElementById("candidateShortDescription")?.value || "").trim();
+            const whatsapp = (document.getElementById("candidateWhatsapp")?.value || "").trim();
+            const email = (document.getElementById("candidateEmail")?.value || "").trim();
+            const teachExp = (document.getElementById("candidateTeachExp")?.value || "").trim();
+
+            // Audience checkboxes → array
+            const audienceCheckboxes = document.querySelectorAll('input[name="candidateAudience"]:checked');
+            const audienceList = Array.from(audienceCheckboxes).map(cb => cb.value);
+
+            // ── Tahap 3 ──
+            const wifi = (document.getElementById("candidateWifi")?.value || "").trim();
+            const laptop = (document.getElementById("candidateLaptop")?.value || "").trim();
+
+            // Validasi minimal
+            if (!fullName) {
+                alert("Nama lengkap wajib diisi.");
+                return;
+            }
+
+            const ROLE_ID = "mentor";
+            const ROLE_NAME = "mentor";
+
+            // File inputs
+            const photoFile = document.getElementById("candidatePhoto")?.files?.[0] || null;
+            const portfolioFile = document.getElementById("candidatePortfolio")?.files?.[0] || null;
+            const resumeFile = document.getElementById("candidateResume")?.files?.[0] || null;
+
+            let avatarUrl = null;
+            let portfolioUrl = null;
+            let resumeUrl = null;
+
+            const nowIso = new Date().toISOString();
+
+            const payload = {
+                basic_info: {
+                    full_name: fullName,
+                    current_role: ROLE_NAME,
+                    avatar_url: null
+                },
+                contact_info: {
+                    address: null,
+                    campus: null,
+                    whatsapp: whatsapp || null,
+                    email: email || null,
+                    instagram: null,
+                    linkedin: null
+                },
+                education: null,
+                profiling: {
+                    short_description: shortDesc || null,
+                    teaching_experience: teachExp || null,
+                    audience_range: audienceList.length > 0 ? audienceList : null
+                },
+                mentor: {
+                    location: mode || null,
+                    working_status: workingStatus || null,
+                    platform: platform || null,
+                    whatsapp: whatsapp || null,
+                    email: email || null,
+                    instagram: null,
+                    linkedin: null,
+                    portfolio_url: null,
+                    resume_url: null,
+                    teaching_experience: teachExp || null,
+                    audience_range: audienceList.length > 0 ? audienceList : null,
+                    wifi_provider: wifi || null,
+                    laptop_brand: laptop || null,
+                    role_id: ROLE_ID,
+                    role_name: ROLE_NAME
+                },
+                role_id: ROLE_ID,
+                role_name: ROLE_NAME,
+                recruitment_status: {
+                    current: "screening",
+                    history: [
+                        { status: "screening", date: nowIso }
+                    ]
+                },
+                created_at: serverTimestampFn()
+            };
+
+            try {
+                nextBtn.disabled = true;
+                nextBtn.textContent = "Menyimpan...";
+
+                // Upload files
+                if (uploadFileToStorageFn) {
+                    if (photoFile) {
+                        avatarUrl = await uploadFileToStorageFn(photoFile, "talent-avatars");
+                        payload.basic_info.avatar_url = avatarUrl || null;
+                    }
+                    if (portfolioFile) {
+                        portfolioUrl = await uploadFileToStorageFn(portfolioFile, "talent-portfolio");
+                        payload.mentor.portfolio_url = portfolioUrl || null;
+                    }
+                    if (resumeFile) {
+                        resumeUrl = await uploadFileToStorageFn(resumeFile, "talent-resume");
+                        payload.mentor.resume_url = resumeUrl || null;
+                    }
+                }
+
+                await addDocFn(collectionFn(db, "talents"), payload);
+
+                // Reset form
+                if (formEl) formEl.reset();
+                document.getElementById("audienceField").classList.remove("visible");
+                currentStep = 0;
+                showStep(currentStep);
+                alert("Formulir terkirim! Terima kasih telah mendaftar sebagai Mentor.");
+            } catch (e) {
+                console.error("Gagal mengirim lamaran", e);
+                alert("Gagal mengirim lamaran. Silakan coba lagi.");
+            } finally {
+                nextBtn.disabled = false;
+                nextBtn.innerHTML = "Simpan Lamaran";
+                if (!nextBtn.classList.contains("bg-green-600")) {
+                    nextBtn.classList.replace("bg-[#003366]", "bg-green-600");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
