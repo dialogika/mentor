@@ -104,14 +104,14 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/herna-prissella-purba.html",
     statusAktif: false,
   },
-  {
-    name: "Nicho Finsya Prananda",
-    image: "assets/img/mentor/nicho-finsya.jpg",
-    alt: "Gambar kak Nicho Finsya Prananda",
-    role: "Online",
-    url: "https://www.dialogika.co/mentor/nicho-finsya-prananda.html",
-    statusAktif: true,
-  },
+  // { Inactive
+  //   name: "Nicho Finsya Prananda",
+  //   image: "assets/img/mentor/nicho-finsya.jpg",
+  //   alt: "Gambar kak Nicho Finsya Prananda",
+  //   role: "Online",
+  //   url: "https://www.dialogika.co/mentor/nicho-finsya-prananda.html",
+  //   statusAktif: true,
+  // },
   {
     name: "Rafellino Ovaldo",
     image: "assets/img/mentor/rafellino-ovaldo.webp",
@@ -128,14 +128,14 @@ const mentorData = [
   //  url: "https://www.dialogika.co/mentor/bondan-prasetyo.html",
   //  statusAktif: true,
   // },
-  {
-    name: "Dyah Niken Rahmawati",
-    image: "assets/img/mentor/dyah-niken-rahmawati.webp",
-    alt: "Gambar kak Dyah Niken Rahmawati",
-    role: "Online & Offline Mentor",
-    url: "https://www.dialogika.co/mentor/dyah-niken-rahmawati.html",
-    statusAktif: true,
-  },
+  // { Inactive
+  //   name: "Dyah Niken Rahmawati",
+  //   image: "assets/img/mentor/dyah-niken-rahmawati.webp",
+  //   alt: "Gambar kak Dyah Niken Rahmawati",
+  //   role: "Online & Offline Mentor",
+  //   url: "https://www.dialogika.co/mentor/dyah-niken-rahmawati.html",
+  //   statusAktif: true,
+  // },
   {
     name: "Ariani Suryaningsih",
     image: "assets/img/mentor/ariani-suryaningsih.webp",
@@ -376,14 +376,14 @@ const mentorData = [
  //   url: "https://www.dialogika.co/mentor/panji.html",
  //   statusAktif: true,
  // },
-  {
-    name: "Pitta Sekar Wangi",
-    image: "assets/img/mentor/pitta.jpg",
-    alt: "Gambar Kak Pitta Sekar Wangi",
-    role: "Online & Offline Mentor",
-    url: "https://www.dialogika.co/mentor/pitta.html",
-    statusAktif: true,
-  },
+  // { Inactive
+  //   name: "Pitta Sekar Wangi",
+  //   image: "assets/img/mentor/pitta.jpg",
+  //   alt: "Gambar Kak Pitta Sekar Wangi",
+  //   role: "Online & Offline Mentor",
+  //   url: "https://www.dialogika.co/mentor/pitta.html",
+  //   statusAktif: true,
+  // },
   {
     name: "Muhammad Rio Fariza",
     image: "assets/img/mentor/rio.jpg",
@@ -472,6 +472,14 @@ const mentorData = [
   //   url: "https://www.dialogika.co/mentor/naila-salma.html",
   //   statusAktif: true,
   // },
+  {
+    name: "Haryanto Saputra",
+    image: "assets/img/mentor/Haryanto.jpeg",
+    alt: "Gambar Kak Haryanto Saputra",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/Haryanto-Saputra.html",
+    statusAktif: true,
+  },
 ];
 
 //
