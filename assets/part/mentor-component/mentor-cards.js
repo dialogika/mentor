@@ -56,14 +56,14 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/regina-nashya.html",
     statusAktif: true,
   },
- // { Inactive
- //   name: "Andree Octavianus Sinaga",
- //   image: "assets/img/mentor/andree-octavianus-sinaga.jpeg",
- //   alt: "Gambar mentor Andree Octavianus Sinaga",
- //   role: "Online & Offline Mentor",
- //   url: "https://www.dialogika.co/mentor/andree-octavianus-sinaga.html",
- //   statusAktif: true,
- // }, 
+  {
+    name: "Andre Sinaga",
+    image: "assets/img/mentor/andresinaga.jpeg",
+    alt: "Gambar mentor Andre Sinaga",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/andre-sinaga.html",
+    statusAktif: true,
+  },
   {
     name: "Dr. Lukmanul Hafiz",
     image: "assets/img/mentor/lukmanul-hafiz.jpeg",
