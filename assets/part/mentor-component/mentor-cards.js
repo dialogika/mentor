@@ -456,6 +456,14 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/anak-agung.html",
     statusAktif: true,
   },
+  {
+    name: "Rini Yunita Khusuharyanti",
+    image: "assets/img/mentor/rini-yunita-khusuharyanti.webp",
+    alt: "Gambar kak Rini Yunita Khusuharyanti",
+    role: "Offline Mentor",
+    url: "https://www.dialogika.co/mentor/rini-yunita-khusuharyanti.html",
+    statusAktif: true,
+  },
   // { Inactive
   //   name: "Rahmat Kurnia (Erka)",
   //   image: "https://coacherka.com/gallery_gen/b7569f7c656bef1a435483126ca04976_940x940_fit.jpg?ts=1724281851",
