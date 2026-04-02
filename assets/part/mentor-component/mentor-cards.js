@@ -460,7 +460,7 @@ const mentorData = [
     name: "Rini Yunita Khusuharyanti",
     image: "assets/img/mentor/rini-yunita-khusuharyanti.webp",
     alt: "Gambar kak Rini Yunita Khusuharyanti",
-    role: "Offline Mentor",
+    role: "Online & Offline Mentor",
     url: "https://www.dialogika.co/mentor/rini-yunita-khusuharyanti.html",
     statusAktif: true,
   },
