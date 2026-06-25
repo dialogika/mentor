@@ -493,7 +493,7 @@ const mentorData = [
     image: "assets/img/mentor/leila-karina.webp",
     alt: "Gambar Kak Leila Karina",
     role: "Online & Offline Mentor",
-    url: "https://www.dialogika.co/mentor/Haryanto-Saputra.html",
+    url: "https://www.dialogika.co/mentor/leila-karina.html",
     statusAktif: true,
   },
 ];
