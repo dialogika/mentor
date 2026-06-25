@@ -8,31 +8,31 @@ const mentorData = [
   //   url: "https://www.dialogika.co/mentor/putri-amanda.html",
   //   statusAktif: false,
   // },
-    {
+  {
     name: "Wening Soca",
     image: "assets/img/mentor/wening-soca.jpg",
     alt: "Gambar mentor Wening Soca",
     role: "Online & Offline Mentor",
     url: "https://www.dialogika.co/mentor/wening-soca.html",
     statusAktif: true,
-    },
-   // { Inactive
-   // name: "Dedi Andrian",
-   // image: "assets/img/mentor/dedi-andrian.jpg",
-   // alt: "Gambar mentor Dedi Andrian",
-   // role: "Online & Offline Mentor",
-   // url: "https://www.dialogika.co/mentor/dedi-andrian.html",
-   // statusAktif: true,
-   // },
-    {
+  },
+  // { Inactive
+  // name: "Dedi Andrian",
+  // image: "assets/img/mentor/dedi-andrian.jpg",
+  // alt: "Gambar mentor Dedi Andrian",
+  // role: "Online & Offline Mentor",
+  // url: "https://www.dialogika.co/mentor/dedi-andrian.html",
+  // statusAktif: true,
+  // },
+  {
     name: "Arga Dumadi",
     image: "assets/img/mentor/arga-dumadi.jpg",
     alt: "Gambar mentor Arga Dumadi",
     role: "Online & Offline Mentor",
     url: "https://www.dialogika.co/mentor/arga-dumadi.html",
     statusAktif: true,
-    },
-    {
+  },
+  {
     name: "Rhinto Setiawan",
     image: "assets/img/mentor/Rhinto-setyawan.webp",
     alt: "Gambar mentor Rhinto Setiawan",
@@ -40,14 +40,14 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/rhinto-setiawan.html",
     statusAktif: true,
   },
-  {
-    name: "Waode Zalfa Yunitradias",
-    image: "assets/img/mentor/waode-zalfa.webp",
-    alt: "Gambar mentor Waode Zalfa Yunitradias",
-    role: "Online & Offline Mentor",
-    url: "https://www.dialogika.co/mentor/waode-zalfa-yunitradias.html",
-    statusAktif: true,
-  },
+  // {
+  //   name: "Waode Zalfa Yunitradias",
+  //   image: "assets/img/mentor/waode-zalfa.webp",
+  //   alt: "Gambar mentor Waode Zalfa Yunitradias",
+  //   role: "Online & Offline Mentor",
+  //   url: "https://www.dialogika.co/mentor/waode-zalfa-yunitradias.html",
+  //   statusAktif: true,
+  // },
   {
     name: "Regina Nashya",
     image: "assets/img/mentor/regina-nashya.webp",
@@ -88,14 +88,14 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/daniel-ari-setiawan.html",
     statusAktif: true,
   },
-  {
-    name: "M. Rendra Hidayaturahman",
-    image: "assets/img/mentor/rendra-hidayaturahman.webp",
-    alt: "Gambar kak M. Rendra Hidayaturahman",
-    role: "Online",
-    url: "https://www.dialogika.co/mentor/rendra-hidayaturahman.html",
-    statusAktif: true,
-  },
+  // {
+  //   name: "M. Rendra Hidayaturahman",
+  //   image: "assets/img/mentor/rendra-hidayaturahman.webp",
+  //   alt: "Gambar kak M. Rendra Hidayaturahman",
+  //   role: "Online",
+  //   url: "https://www.dialogika.co/mentor/rendra-hidayaturahman.html",
+  //   statusAktif: true,
+  // },
   {
     name: "Herna Prissella Purba",
     image: "assets/img/mentor/herna-prissella-purba.webp",
@@ -208,14 +208,14 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/salsabilla.html",
     statusAktif: true,
   },
- // { Inactive
- //   name: "Ihlasul Akmal",
- //   image: "assets/img/mentor/Akmal.webp",
- //   alt: "Gambar kak Ihlasaul Akmal",
- //   role: "Online Mentor",
- //   url: "https://www.dialogika.co/mentor/ihlasaul-akmal.html",
- //   statusAktif: true,
- // },
+  // { Inactive
+  //   name: "Ihlasul Akmal",
+  //   image: "assets/img/mentor/Akmal.webp",
+  //   alt: "Gambar kak Ihlasaul Akmal",
+  //   role: "Online Mentor",
+  //   url: "https://www.dialogika.co/mentor/ihlasaul-akmal.html",
+  //   statusAktif: true,
+  // },
   // {
   //   name: "Novelia Qothrunnad",
   //   image: "assets/img/mentor/NoveliaQothrunnadNew.webp",
@@ -232,14 +232,14 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/syifa-nabilah.html",
     statusAktif: true,
   },
- // { Inactive
- //   name: "Pauline Tricia",
- //   image: "assets/img/mentor/cia.jpg",
- //   alt: "Gambar kak Pauline Tricia",
- //   role: "Online Mentor",
- //   url: "https://www.dialogika.co/mentor/cia.html",
- //   statusAktif: true,
- // },
+  // { Inactive
+  //   name: "Pauline Tricia",
+  //   image: "assets/img/mentor/cia.jpg",
+  //   alt: "Gambar kak Pauline Tricia",
+  //   role: "Online Mentor",
+  //   url: "https://www.dialogika.co/mentor/cia.html",
+  //   statusAktif: true,
+  // },
   // { Inactive
   //   name: "Zulfatun Ni'mah",
   //   image: "assets/img/mentor/ZulfatunNi'mah.webp",
@@ -272,14 +272,14 @@ const mentorData = [
   //   url: "https://www.dialogika.co/mentor/bayu.html",
   //   statusAktif: false,
   // },
-  {
-    name: "Bang Jacob",
-    image: "assets/img/mentor/bang-jacob.webp",
-    alt: "Gambar Kak Bang Jacob",
-    role: "Offline Mentor",
-    url: "https://www.dialogika.co/mentor/bang-jacob.html",
-    statusAktif: true,
-  },
+  // {
+  //   name: "Bang Jacob",
+  //   image: "assets/img/mentor/bang-jacob.webp",
+  //   alt: "Gambar Kak Bang Jacob",
+  //   role: "Offline Mentor",
+  //   url: "https://www.dialogika.co/mentor/bang-jacob.html",
+  //   statusAktif: true,
+  // },
   {
     name: "Giomelando Eurichi Elaman",
     image: "assets/img/mentor/giomelando.webp",
@@ -368,14 +368,14 @@ const mentorData = [
   //   url: "https://www.dialogika.co/mentor/fajar.html",
   //   statusAktif: false,
   // },
- // { Inactive
- //   name: "Panji Putra",
- //   image: "assets/img/mentor/panji.jpg",
- //   alt: "Gambar Kak Panji Putra",
- //   role: "Online & Offline Mentor",
- //   url: "https://www.dialogika.co/mentor/panji.html",
- //   statusAktif: true,
- // },
+  // { Inactive
+  //   name: "Panji Putra",
+  //   image: "assets/img/mentor/panji.jpg",
+  //   alt: "Gambar Kak Panji Putra",
+  //   role: "Online & Offline Mentor",
+  //   url: "https://www.dialogika.co/mentor/panji.html",
+  //   statusAktif: true,
+  // },
   // { Inactive
   //   name: "Pitta Sekar Wangi",
   //   image: "assets/img/mentor/pitta.jpg",
@@ -384,14 +384,14 @@ const mentorData = [
   //   url: "https://www.dialogika.co/mentor/pitta.html",
   //   statusAktif: true,
   // },
-  {
-    name: "Muhammad Rio Fariza",
-    image: "assets/img/mentor/rio.jpg",
-    alt: "Gambar Kak Muhammad Rio Fariza",
-    role: "Online & Offline Mentor",
-    url: "https://www.dialogika.co/mentor/rio.html",
-    statusAktif: true,
-  },
+  // {
+  //   name: "Muhammad Rio Fariza",
+  //   image: "assets/img/mentor/rio.jpg",
+  //   alt: "Gambar Kak Muhammad Rio Fariza",
+  //   role: "Online & Offline Mentor",
+  //   url: "https://www.dialogika.co/mentor/rio.html",
+  //   statusAktif: true,
+  // },
   // { Inactive
   //   name: "Lailati Rohmah",
   //   image: "assets/img/mentor/laila-rohmah.webp",
@@ -488,6 +488,14 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/Haryanto-Saputra.html",
     statusAktif: true,
   },
+  {
+    name: "Leila Karina",
+    image: "assets/img/mentor/leila-karina.webp",
+    alt: "Gambar Kak Leila Karina",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/Haryanto-Saputra.html",
+    statusAktif: true,
+  },
 ];
 
 //
@@ -498,7 +506,7 @@ class MentorList extends HTMLElement {
   connectedCallback() {
     // Sort data mentor secara alphabet berdasarkan nama
     const sortedMentors = mentorData.sort((a, b) =>
-      a.name.localeCompare(b.name)
+      a.name.localeCompare(b.name),
     );
 
     // Filter hanya mentor yang aktif
