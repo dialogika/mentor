@@ -496,6 +496,14 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/leila-karina.html",
     statusAktif: true,
   },
+  {
+    name: "Maria Saraswati Kinasih Hapsari",
+    image: "assets/img/mentor/maria-saraswati.webp",
+    alt: "Gambar Kak Leila Karina",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/maria-saraswati.html",
+    statusAktif: true,
+  },
 ];
 
 //
