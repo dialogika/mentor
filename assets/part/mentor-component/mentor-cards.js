@@ -499,9 +499,17 @@ const mentorData = [
   {
     name: "Maria Saraswati Kinasih Hapsari",
     image: "assets/img/mentor/maria-saraswati.webp",
-    alt: "Gambar Kak Leila Karina",
+    alt: "Gambar Kak Maria Saraswati",
     role: "Online & Offline Mentor",
     url: "https://www.dialogika.co/mentor/maria-saraswati.html",
+    statusAktif: true,
+  },
+  {
+    name: "Nur Lailatul Izzah",
+    image: "assets/img/mentor/nur-lailatul.webp",
+    alt: "Gambar Kak Nur Lailatul Izzah",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/nur-lailatul.html",
     statusAktif: true,
   },
 ];
