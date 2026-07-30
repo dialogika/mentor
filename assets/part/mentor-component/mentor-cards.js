@@ -512,6 +512,14 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/nur-lailatul.html",
     statusAktif: true,
   },
+  {
+    name: "Puspita Wijayati, M.Pd.",
+    image: "assets/img/mentor/puspita-wijayati.webp",
+    alt: "Gambar Kak Puspita Wijayati",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/puspita-wijayati.html",
+    statusAktif: true,
+  },
 ];
 
 //
