@@ -497,6 +497,14 @@ const mentorData = [
     statusAktif: true,
   },
   {
+    name: "Lucia Darujati",
+    image: "assets/img/mentor/lucia-darujati.webp",
+    alt: "Gambar Kak Lucia Darujati",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/lucia-darujati.html",
+    statusAktif: true,
+  },
+  {
     name: "Maria Saraswati Kinasih Hapsari",
     image: "assets/img/mentor/maria-saraswati.webp",
     alt: "Gambar Kak Maria Saraswati",
