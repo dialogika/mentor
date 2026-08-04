@@ -528,6 +528,14 @@ const mentorData = [
     url: "https://www.dialogika.co/mentor/puspita-wijayati.html",
     statusAktif: true,
   },
+  {
+    name: "Selvi Susanti",
+    image: "assets/img/mentor/selvi-susanti.jpeg",
+    alt: "Gambar Kak Selvi Susanti",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/selvi-susanti.html",
+    statusAktif: true,
+  },
 ];
 
 //
