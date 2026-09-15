@@ -12,7 +12,7 @@ const mentorData = [
     name: "Holmes Heriyanto Silalahi",
     image: "assets/img/mentor/holmes-silalahi.png",
     alt: "Gambar mentor Holmes Heriyanto Silalahi",
-    role: "Online Mentor",
+    role: "Online & Offline Mentor",
     url: "https://www.dialogika.co/mentor/holmes-silalahi.html",
     statusAktif: true,
   },
