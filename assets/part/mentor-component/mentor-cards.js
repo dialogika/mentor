@@ -9,6 +9,14 @@ const mentorData = [
   //   statusAktif: false,
   // },
   {
+    name: "Holmes Heriyanto Silalahi",
+    image: "assets/img/mentor/holmes-silalahi.png",
+    alt: "Gambar mentor Holmes Heriyanto Silalahi",
+    role: "Online Mentor",
+    url: "https://www.dialogika.co/mentor/holmes-silalahi.html",
+    statusAktif: true,
+  },
+  {
     name: "Wening Soca",
     image: "assets/img/mentor/wening-soca.jpg",
     alt: "Gambar mentor Wening Soca",
