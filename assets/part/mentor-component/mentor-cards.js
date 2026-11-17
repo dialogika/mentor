@@ -9,6 +9,14 @@ const mentorData = [
   //   statusAktif: false,
   // },
   {
+    name: "Bagus Gede Karma Amandangi",
+    image: "assets/img/mentor/bagus-gede.jpg",
+    alt: "Gambar mentor Bagus Gede Karma Amandangi",
+    role: "Online & Offline Mentor",
+    url: "https://www.dialogika.co/mentor/bagus-gede.html",
+    statusAktif: true,
+  },
+  {
     name: "Holmes Heriyanto Silalahi",
     image: "assets/img/mentor/holmes-silalahi.png",
     alt: "Gambar mentor Holmes Heriyanto Silalahi",
